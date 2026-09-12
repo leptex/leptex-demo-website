@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="红肉苹果 Red-fleshed apple">
+  <title>红肉苹果 · Red-fleshed apple</title>
+  <defs>
+    <filter id="aw" x="-15%" y="-15%" width="130%" height="130%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="9" result="t"/>
+      <feDisplacementMap in="SourceGraphic" in2="t" scale="3" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <radialGradient id="skin" cx="34%" cy="26%" r="82%">
+      <stop offset="0" stop-color="#BE4B3F"/>
+      <stop offset="52%" stop-color="#98271F"/>
+      <stop offset="100%" stop-color="#66160F"/>
+    </radialGradient>
+    <radialGradient id="flesh" cx="50%" cy="50%" r="58%">
+      <stop offset="0" stop-color="#F7E2D6"/>
+      <stop offset="26%" stop-color="#EFAC99"/>
+      <stop offset="66%" stop-color="#DA7B69"/>
+      <stop offset="100%" stop-color="#C55B4B"/>
+    </radialGradient>
+    <path id="apple" d="M120 66C104 48 72 46 58 68c-14 22-10 62 8 90 14 22 32 38 54 38s40-16 54-38c18-28 22-68 8-90-14-22-46-20-62-2Z"/>
+  </defs>
+
+  <g filter="url(#aw)">
+    <!-- 整果 · 皮红 -->
+    <g transform="translate(30 -16)">
+      <use href="#apple" fill="url(#skin)"/>
+      <path d="M94 96c5-15 17-25 30-26" fill="none" stroke="#E7A897" stroke-width="7" stroke-linecap="round" opacity=".4"/>
+      <path d="M120 66c2-18 4-30 14-40" fill="none" stroke="#4B3A2C" stroke-width="6" stroke-linecap="round"/>
+      <path d="M134 36c16-16 44-12 50 0-12 18-38 18-50 0Z" fill="#5F7A66" stroke="#33453A" stroke-width="1.6"/>
+      <path d="M137 33c14-2 28 0 43 4" fill="none" stroke="#33453A" stroke-width="1.1"/>
+    </g>
+
+    <!-- 切面 · 一刀下去,里头也是红的 -->
+    <g transform="translate(-18 68) scale(.6)">
+      <path d="M120 66c2-18 4-30 14-40" fill="none" stroke="#4B3A2C" stroke-width="9" stroke-linecap="round"/>
+      <use href="#apple" fill="url(#flesh)"/>
+      <use href="#apple" fill="none" stroke="#8E2018" stroke-width="6"/>
+      <!-- 果肉的红丝 -->
+      <g fill="none" stroke="#C4604F" stroke-width="3.6" stroke-linecap="round" opacity=".6">
+        <path d="M120 126 96 80M120 126l30-42M120 126 66 114M120 126l56-10M120 126l-24 52M120 126l28 50M120 126l-48 32M120 126l50 34"/>
+      </g>
+      <!-- 果心 -->
+      <path d="M120 96c15 7 23 17 23 30s-8 23-23 30c-15-7-23-17-23-30s8-23 23-30Z" fill="#FBF1E7" opacity=".94"/>
+      <g fill="#41291A">
+        <path d="M110 111c7-5 13 2 13 11s-6 16-13 11-7-17 0-22Z"/>
+        <path d="M130 141c-7 5-13-2-13-11s6-16 13-11 7 17 0 22Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
