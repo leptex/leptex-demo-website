@@ -1,165 +1,266 @@
-# Lucky Farm 幸运农场 · Redmond, WA
+# Lucky Farm
 
-**一页网站,一个聊天入口。** 版面学 openai.com —— 居中的大问句、输入框、几个建议按钮;
-画面是夜色山水。价格、地点、时间一律**不写在页面上**,全部由
-[Leptex](https://leptex.com) 的助手在对话里回答。
+A reference storefront for a [Leptex](https://leptex.com) web link: a single static page whose
+only job is to turn a visitor into a conversation.
 
-线上:<https://luckyfarm.leptex.shop> · 问答页:`https://leptex.com/web/bu8nbabMeDZu`
+[![License: MIT](https://img.shields.io/badge/License-MIT-A8322A.svg)](LICENSE)
+![Dependencies: none](https://img.shields.io/badge/dependencies-none-1B1A17)
+![Build step: none](https://img.shields.io/badge/build%20step-none-1B1A17)
+![Languages: 6](https://img.shields.io/badge/languages-6-5F7A66)
 
-没有构建步骤,没有依赖。一个 HTML、一份 CSS、两份 JS、六张手绘 SVG。
+**Live demo → <https://luckyfarm.leptex.shop>**
+
+Lucky Farm is a fictional family farm in Redmond, WA that sells fruit for local pick-up. The site
+is a complete, production-shaped example of the pattern Leptex is built around: the page carries
+identity and questions, and the assistant carries answers.
+
+One HTML file, one stylesheet, two scripts, six hand-drawn SVGs. No framework, no bundler, no
+package manager, nothing to install.
+
+---
+
+## Table of contents
+
+- [What makes this different](#what-makes-this-different)
+- [Quick start](#quick-start)
+- [How the Leptex link works](#how-the-leptex-link-works)
+- [Customizing](#customizing)
+- [Internationalization](#internationalization)
+- [Theming](#theming)
+- [Deployment](#deployment)
+- [Project structure](#project-structure)
+- [Compliance notes](#compliance-notes)
+- [License](#license)
+
+---
+
+## What makes this different
+
+Most storefronts print their prices, address and opening hours into HTML and then slowly rot. This
+one prints none of them.
+
+| Not on the page | Where it lives instead |
+| --- | --- |
+| Prices | The conversation |
+| Address | The conversation |
+| Opening hours, lead time, payment | The conversation |
+| "Is it ripe yet?", "do you spray?", "can I bring kids?" | The conversation |
+
+What the page *does* carry is deliberately imperishable: who the farm is, what it grows, and a menu
+of twelve questions. Every card, every crop, every pill is a door into the same chat.
+
+Three things fall out of that:
+
+1. **Nothing goes stale.** A page you forgot to update is worse than no page. An assistant answers
+   with today's facts because it is told today's facts.
+2. **The claim surface is small.** Every sentence printed on a storefront is a claim the business
+   owns and has to defend. Moving them into a conversation puts them under one set of instructions
+   that can be corrected in seconds. See [Compliance notes](#compliance-notes).
+3. **Curiosity becomes a lead.** A visitor who wonders about anything has exactly one place to go,
+   and the merchant sees what pulled them in.
+
+The layout borrows its shape from openai.com — a centred question, an input, a row of suggestions —
+and its visual language from Chinese ink-wash landscape painting. Dark by default, with a light
+theme beside it.
+
+---
+
+## Quick start
 
 ```bash
+git clone https://github.com/leptex/leptex-demo-website.git
+cd leptex-demo-website
 python3 -m http.server 8811
 ```
 
-部署:GitHub Pages,从 `main` 分支根目录发布,`CNAME` 已在仓库里。
+Open <http://localhost:8811>. That is the whole toolchain.
 
 ---
 
-## 一、网站上「没有」什么 —— 这是故意的
+## How the Leptex link works
 
-| 不写在页面上 | 去哪儿问 |
+A Leptex web link is a **full page, not a widget**. This site links out to it and never embeds it,
+so there is no script to load, no API key to leak and no visitor data leaving your domain.
+
+Two query parameters do all the work:
+
+| Parameter | Meaning |
 | --- | --- |
-| 价格 | 助手。页面上写明「价格随这一周、随那天早上摘了多少而动」 |
-| 农场地址 | 助手 |
-| 自取时间 | 助手 |
-| 提前多久下单 / 付款方式 | 助手 |
+| `?q=` | Pre-fills the visitor's first message. It is only pre-filled — they still press send, and can edit it first. |
+| `&e=` | Labels where the link sat, so you can see which part of the site starts conversations and which ones convert. |
 
-页面只留**不会过期的东西**:种什么、什么时候熟、不打药、东西是自己种的。
-所有会变的、需要因人而异的,都变成一个问句链接,把人送进对话。
+Because this is a one-page site, `e` names a **section** rather than a page:
 
-这么做有三个好处:**信息不会过期**(网页改不过来,对话永远是今天的)、
-**合规面收窄**(页面上不做价格和承诺,说错话的机会少)、**每一次好奇都变成一条线索**。
-
-全站扫过一遍:没有任何美元金额、街道地址、营业时间、付款方式。
-`assets/js/i18n.js` 也只打包页面真正引用的 89 个 key,旧的价格/地址文案**没有留在包里**。
-
-### ⚠️ Leptex 后台那条回复规则必须跟着改
-
-后台现在写的是:
-
-> Do not discuss specific prices… **You may only mention that prices are available on the website.**
-
-网站已经没有价格了。**这条规则不改,就会死循环** —— 客人问价 → 助手说「去网站看」→
-网站说「问助手」→ 客人走人。
-
-改成让助手直接报当天的价,或者「先问清楚要哪样、多少,再给报价并留邮箱」。
-地址和自取时间同理:现在页面上没有了,助手必须能答,或者能收邮箱转人工。
-
----
-
-## 二、Leptex 是怎么接的
-
-Leptex 那一页是**整页**,不是挂件。所以这个站**只链过去,不嵌入** —— 没有 script、没有 key、不往外送访客数据。
-
-| 参数 | 作用 |
-| --- | --- |
-| `?q=` | 预填访客的第一句话。**只是预填**,他还得自己按发送,发之前能改 |
-| `&e=` | 标出链接所在的位置,用来看哪一块带来人、哪一块成单 |
-
-一页网站,所以 `e` 标的是**版块**,不是页面。共 21 个链接 + 2 个输入框:
-
-| `e` | 版块 | 数量 |
+| `e` | Section | Entry points |
 | --- | --- | --- |
-| `home` | 首屏问句框 + 尾部问句框 | 6 |
-| `seasons` | 本季六样 + 价格说明 | 7 |
-| `farm` | 凭什么放心 | 2 |
-| `ask` | 什么都可以问 | 6 |
+| `home` | Hero announcement, ask box, suggestion pills, closing ask box | 7 |
+| `grow` | The six crops | 6 |
+| `ask` | The twelve-question menu | 12 |
 
-这样后台能直接看出来:**是价格把人问进来的,还是"不打药"把人问进来的。**
-
-### 输入框是个普通表单
+### The ask box is a plain form
 
 ```html
-<form class="ask" data-ask action="https://leptex.com/web/bu8nbabMeDZu"
+<form class="ask" data-ask action="https://leptex.com/web/YOUR_LINK_CODE"
       method="get" target="_blank" rel="noopener">
-  <input type="text" name="q" data-ask-input placeholder="…">
+  <input type="text" name="q" data-ask-input placeholder="Ask anything about the farm">
   <input type="hidden" name="e" value="home">
   <button type="submit">↑</button>
 </form>
 ```
 
-`q` 在前、`e` 在后,浏览器自己把任何语言的问句编码好。**JS 关掉也能用**。
-`site.js` 只多做一件事:问句是空的就不带 `?q=`。
+`q` comes before `e` in the DOM, so the browser serialises `?q=…&e=home` and percent-encodes any
+language correctly, for free. **It works with JavaScript disabled** — that is deliberate.
+`site.js` adds exactly one behaviour: an empty question submits without a `?q=` at all.
 
 ---
 
-## 三、六种语言 · 两种模式
+## Customizing
 
-语言:English / 简体中文 / Español / 한국어 / Tiếng Việt / 日本語。按浏览器语言自动挑,
-记在 `localStorage`。全部文案在 `assets/js/i18n.js`,HTML 里内联的是英文,
-所以 JS 挂了还是一份完整的英文站。
+### Point it at your own Leptex link
 
-| 属性 | 换什么 |
+Replace every occurrence of the link code:
+
+```bash
+grep -rl 'bu8nbabMeDZu' . --include='*.html' | xargs sed -i 's/bu8nbabMeDZu/YOUR_CODE/g'
+```
+
+### The seasonal announcement
+
+The pill above the headline is the **one line on the site that expires**. It is a single i18n key,
+`herald`, plus its question `q.herald`, in `assets/js/i18n.js`. The English fallback is inlined in
+`index.html`.
+
+```jsonc
+"herald":   { "en": "Hawthorn is in · and this year they are big", … },
+"q.herald": { "en": "Do you still have hawthorn, and how big are they this year?", … }
+```
+
+Change both when the season turns; delete the `<a class="herald">` element to remove it entirely.
+
+### Adding a question to the menu
+
+```html
+<a class="asks__item" href="https://leptex.com/web/YOUR_CODE?q=ENCODED&amp;e=ask" data-q="q.yourkey"
+   target="_blank" rel="noopener">
+  <span class="asks__q" data-i18n="l.yourkey">Your question?</span>
+  <span class="asks__go" data-i18n="ui.go">Ask</span>
+</a>
+```
+
+Put the English text in the `href` as a fallback for visitors without JavaScript, and the six
+translations under `l.yourkey` / `q.yourkey` in `i18n.js`.
+
+> The menu holds **twelve** cards on purpose: twelve divides evenly by 1, 2 and 3, so the responsive
+> grid never leaves a half-empty row. If you change the count, keep it divisible by 3 and 2.
+
+### Contact details
+
+One placeholder remains, the footer email. It is marked `class="edit"`, which draws a dotted
+underline so you can spot every sample value at a glance. Delete the `.edit` rule at the bottom of
+`site.css` before launch.
+
+---
+
+## Internationalization
+
+English, 简体中文, Español, 한국어, Tiếng Việt and 日本語. The visitor's language is detected from
+`navigator.languages` on first visit and remembered in `localStorage`.
+
+English is inlined in the HTML, so the page degrades to a complete English site if the script fails.
+
+| Attribute | Localises |
 | --- | --- |
-| `data-i18n="key"` | 元素里的文字 |
-| `data-i18n-ph="key"` | 输入框 placeholder |
+| `data-i18n="key"` | Element text |
+| `data-i18n-ph="key"` | Input placeholder |
 | `data-i18n-label="key"` | `aria-label` |
-| `data-q="key"` | 链接里 `?q=` 的问句 —— 换语言时问句也跟着换 |
+| `data-q="key"` | The `?q=` question in a link — switching language rewrites the question and leaves `&e=` untouched |
 
-**加一门语言**:在 `i18n.js` 的 `langs` 里加一项,再给每个 key 补上那门语言。`site.js` 不用改。
+**To add a language**, append an entry to `langs` in `i18n.js` and give every key a string for it.
+`site.js` needs no change.
 
-明暗:**默认是夜**。右上角按钮切换,记在 `localStorage`。配色在 `site.css` 开头,
-`:root` 是夜,`:root[data-theme="light"]` 是日。
-
----
-
-## 四、上线前还要换什么
-
-只剩一处了:**页脚的邮箱**(`hello@luckyfarm.leptex.shop`),在 `index.html` 里带 `class="edit"`。
-
-换完把 `site.css` 最后那条 `.edit { … }` 规则删掉,虚线提示就没了。
+`i18n.js` contains only the keys the page actually references. Strings for removed sections are not
+shipped — which is how prices and addresses stay out of the bundle as well as off the page.
 
 ---
 
-## 五、「安全 / 有机」这类话怎么说才合规
+## Theming
 
-页面只说**做法**和**出处**,不碰标签和健康承诺:
+Dark is the default. The toggle sets `data-theme` on `<html>` and persists the choice; an inline
+script in `<head>` applies it before first paint, so there is no flash.
 
-- ✅ 「卖的每一样都是我们自己在 Redmond 种的,不从别处进货再转手」—— 来源事实
-- ✅ 「不打杀虫剂,也不打除草剂,任何季节都不打」—— **做法**陈述,真的就能说
-- ✅ 「地垄就在你取袋子的地方旁边,走一圈」—— 邀请核实
+All colour lives in two blocks at the top of `site.css`: `:root` for dark, `:root[data-theme="light"]`
+for light. Both define the same token names, so changing one concept changes both themes.
 
-刻意避开的三个词:
+To follow the operating system instead of defaulting to dark:
 
-1. **Organic / 有机** —— USDA 管制,没认证不能当认证宣称
-2. **Pesticide-free / 零农残** —— 这是对**产品残留**的断言。邻地飘移管不了,谁都保证不了
-3. **完全安全 / 最安全** —— 生鲜本身有食品安全风险,证实不了,出事反成责任
+```js
+var t = localStorage.getItem('lf.theme');
+document.documentElement.setAttribute('data-theme',
+  t || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'));
+```
 
-页面上那句话把这个立场直接写明了:
-
-> 我们不说「零农残」,也不说「有机认证」—— 那是标签上的话。
-> 我们说的是做法:这块地不打药,你随时可以来看。
-
-这三个词在全站**只出现在这一句否认它们的话里**,六种语言都核过。
-
-> 通用营销合规常识,不是法律意见。要打认证标之前找 WSDA 或律师确认。
+The six illustrations are always mounted on a paper-coloured plate (`.plate`), like scrolls hung on
+a dark wall — so a single set of artwork reads correctly in both themes with no duplicate assets.
 
 ---
 
-## 六、文件结构
+## Deployment
+
+Any static host. The repository is set up for GitHub Pages:
+
+1. **Settings → Pages** → Source: *Deploy from a branch* → `main` / `(root)`
+2. Point a DNS `CNAME` record at `<owner>.github.io` with the proxy **disabled** — a CDN in front
+   blocks the ACME challenge and *Enforce HTTPS* will never become available
+3. Wait for the certificate, then tick **Enforce HTTPS**
+4. If you then enable a proxy, set its TLS mode to *Full* or *Full (strict)* — *Flexible* causes a
+   redirect loop
+
+`CNAME` in the repository root holds the custom domain. Remove it if you are not using one.
+
+---
+
+## Project structure
 
 ```
-index.html            整个网站
-assets/css/site.css   全部样式(带章节目录,从「夜」到「动静」)
-assets/js/i18n.js     89 个 key × 6 种语言
-assets/js/site.js     明暗 / 语言 / 问句送出 / 页眉 / 浮章 / 滚动浮现
-assets/img/           樱桃 · 蓝莓 · 山楂 · 红肉苹果 · 柿子 · 四季豆 + favicon
-                      全是手写 SVG,明暗两种模式下都不用换
+index.html              the entire site
+assets/
+  css/site.css          all styles, in numbered sections from "night" to "motion"
+  js/i18n.js            every string, six languages
+  js/site.js            theme, language, form handling, header, scroll reveal
+  img/*.svg             cherry, blueberry, hawthorn, apple, persimmon, green bean, favicon
 robots.txt  sitemap.xml  CNAME
 ```
 
-标是**山水**两个字的意思:山在上,水在下 —— 不用汉字,哪种语言的客人都认得。
-画永远裱在宣纸色的册页上(`.plate`),所以夜里像挂在暗墙上的画,一套图两种模式通用。
-
-### 换一家店
-
-1. 全局替换 `https://leptex.com/web/bu8nbabMeDZu` 为新的 Leptex 链接
-2. `e=home / seasons / farm / ask` 按新版块起名
-3. `i18n.js` 换文案(key 有规律:`c.*` 作物、`q.*` 问句、`l.*` 按钮、`p*.k/v` 承诺)
-4. 换 `assets/img/` 里的 SVG,或直接放照片(`.plate img` 已是 `object-fit: contain`)
-5. `site.css` 开头换 `--cinnabar`(朱砂)和 `--ground`(墨底)
+The mark is the two characters of 山水 — *mountain* over *water* — drawn rather than written, so it
+reads in any language.
 
 ---
 
-MIT License · © 2026
+## Compliance notes
+
+This example sells food, so the copy is written to survive scrutiny. The rules generalise to any
+regulated category.
+
+**The page states practice and provenance, never a label or a health outcome.** Three phrases are
+avoided on purpose:
+
+| Avoided | Why |
+| --- | --- |
+| *organic*, *certified organic* | USDA-regulated in the US; unusable without certification |
+| *pesticide-free*, *no residue*, *chemical-free* | A claim about the product, not the practice. Nobody can guarantee it against spray drift from neighbouring land |
+| *completely safe*, *safest*, *safer than* | Unsubstantiable on raw produce, and a comparative health claim invites both regulators and competitors |
+
+What is safe to say is what you *do*: we grew it here, we do not spray, come and walk the rows.
+
+Since every specific now lives in the assistant rather than the page, **the risk moved with it.**
+Your Leptex reply instructions should carry the same prohibitions — an assistant that improvises
+"totally safe, zero residue" is more dangerous than any headline.
+
+> General marketing-compliance practice, not legal advice. Confirm with counsel or your state
+> department of agriculture before making a certification claim.
+
+---
+
+## License
+
+[MIT](LICENSE)
