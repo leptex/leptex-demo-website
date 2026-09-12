@@ -224,13 +224,24 @@ Any static host. The repository is set up for GitHub Pages:
 
 ```
 index.html              the entire site
+404.html                dead links land in the chat, not on a GitHub error page
 assets/
   css/site.css          all styles, in numbered sections from "night" to "motion"
   js/i18n.js            every string, six languages
   js/site.js            theme, language, form handling, header, scroll reveal
   img/*.svg             cherry, blueberry, hawthorn, apple, persimmon, green bean, favicon
+  img/og.png            share card, rendered from the page's own type and mountains
+scripts/
+  question-coverage.py  regenerates leptex/question-coverage.md from index.html
+leptex/                 the assistant's configuration — see below
 robots.txt  sitemap.xml  CNAME
 ```
+
+Colour passes WCAG AA in both themes. The two things that did not, and now do: the
+muted ink that carries the *"answered by AI"* disclosure, and the text on the
+coral button in dark mode — no single accent can be both bright enough to read as
+text on near-black and dark enough to sit under paper-white, so the button prints
+dark ink on coral instead. The brand mark stays paper-white; logotypes are exempt.
 
 The mark is the two characters of 山水 — *mountain* over *water* — drawn rather than written, so it
 reads in any language.
