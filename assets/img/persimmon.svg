@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="柿子 Persimmons">
+  <title>柿子 · Persimmons</title>
+  <defs>
+    <filter id="pw" x="-15%" y="-15%" width="130%" height="130%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="15" result="t"/>
+      <feDisplacementMap in="SourceGraphic" in2="t" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <radialGradient id="pk" cx="34%" cy="28%" r="80%">
+      <stop offset="0" stop-color="#F0954A"/>
+      <stop offset="46%" stop-color="#D6671C"/>
+      <stop offset="100%" stop-color="#9C3D08"/>
+    </radialGradient>
+  </defs>
+
+  <g filter="url(#pw)">
+    <!-- 枯枝 -->
+    <g fill="none" stroke="#4A4030" stroke-linecap="round">
+      <path d="M16 34c30 6 58 20 84 42" stroke-width="5"/>
+      <path d="M74 58c24-2 46 4 66 18" stroke-width="3"/>
+      <path d="M50 46c-4-10-4-18 0-26" stroke-width="2.6"/>
+    </g>
+
+    <!-- 后面那只 -->
+    <g transform="translate(186 106)">
+      <ellipse rx="33" ry="29" fill="url(#pk)" opacity=".88"/>
+      <g fill="#4C5E3E" opacity=".9">
+        <path d="M0-30c9-9 22-7 25 1-6 8-19 9-25-1Z"/>
+        <path d="M0-30c-9-9-22-7-25 1 6 8 19 9 25-1Z"/>
+        <path d="M0-30c-4-10 2-19 10-19 2 9-3 17-10 19Z"/>
+      </g>
+      <path d="M0-44v-8" fill="none" stroke="#4A4030" stroke-width="4" stroke-linecap="round"/>
+    </g>
+
+    <!-- 前面那只 -->
+    <g transform="translate(116 154)">
+      <ellipse rx="62" ry="55" fill="url(#pk)"/>
+      <ellipse cx="-22" cy="-20" rx="18" ry="12" transform="rotate(-32 -22 -20)" fill="#FBC48B" opacity=".38"/>
+      <path d="M0 -46v88" fill="none" stroke="#A84708" stroke-width="2.4" opacity=".28"/>
+      <path d="M-34 -38C-44 -8 -44 22 -32 44" fill="none" stroke="#A84708" stroke-width="2.2" opacity=".22"/>
+      <path d="M34 -38C44 -8 44 22 32 44" fill="none" stroke="#A84708" stroke-width="2.2" opacity=".22"/>
+      <!-- 四瓣柿蒂 -->
+      <g fill="#4C5E3E">
+        <path d="M0-52c16-16 40-13 45 2-11 15-35 16-45-2Z"/>
+        <path d="M0-52c-16-16-40-13-45 2 11 15 35 16 45-2Z"/>
+        <path d="M0-52c-7-18 3-34 18-34 4 16-6 30-18 34Z"/>
+        <path d="M0-52c7-18-3-34-18-34-4 16 6 30 18 34Z"/>
+      </g>
+      <path d="M0-74v-12" fill="none" stroke="#4A4030" stroke-width="5.5" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>

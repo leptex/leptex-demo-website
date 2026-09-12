@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="蓝莓 Blueberries">
+  <title>蓝莓 · Blueberries</title>
+  <defs>
+    <filter id="bbw" x="-15%" y="-15%" width="130%" height="130%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.034" numOctaves="2" seed="12" result="t"/>
+      <feDisplacementMap in="SourceGraphic" in2="t" scale="3" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <radialGradient id="bb" cx="34%" cy="28%" r="80%">
+      <stop offset="0" stop-color="#5F6C9C"/>
+      <stop offset="44%" stop-color="#3A4670"/>
+      <stop offset="100%" stop-color="#1D2444"/>
+    </radialGradient>
+  </defs>
+
+  <g filter="url(#bbw)">
+    <!-- 枝 -->
+    <g fill="none" stroke="#4A4030" stroke-linecap="round">
+      <path d="M26 30c22 12 40 28 54 48" stroke-width="4.4"/>
+      <path d="M64 62c18 2 34 8 48 18" stroke-width="2.8"/>
+    </g>
+    <!-- 叶 -->
+    <g stroke="#33453A" stroke-width="1.6" stroke-linejoin="round">
+      <path d="M78 60c-4-24 10-46 28-50 10 20 2 46-14 56Z" fill="#5F7A66" opacity=".9"/>
+      <path d="M84 58c4-18 12-34 20-44" fill="none" stroke="#2C3B31" stroke-width="1.1"/>
+      <path d="M116 78c18-16 44-16 56-4-14 18-42 20-56 4Z" fill="#6E8A72" opacity=".85"/>
+    </g>
+
+    <!-- 果 -->
+    <g>
+      <circle cx="88" cy="128" r="25" fill="url(#bb)"/>
+      <circle cx="144" cy="112" r="23" fill="url(#bb)"/>
+      <circle cx="188" cy="140" r="20" fill="url(#bb)"/>
+      <circle cx="106" cy="180" r="24" fill="url(#bb)"/>
+      <circle cx="158" cy="170" r="22" fill="url(#bb)"/>
+      <circle cx="198" cy="196" r="18" fill="url(#bb)"/>
+      <circle cx="62" cy="176" r="18" fill="url(#bb)"/>
+    </g>
+    <!-- 果霜 -->
+    <g fill="#B9C3DC" opacity=".24">
+      <ellipse cx="79" cy="117" rx="12" ry="8" transform="rotate(-32 79 117)"/>
+      <ellipse cx="136" cy="102" rx="11" ry="7" transform="rotate(-32 136 102)"/>
+      <ellipse cx="97" cy="169" rx="11" ry="7" transform="rotate(-32 97 169)"/>
+      <ellipse cx="150" cy="160" rx="10" ry="6.5" transform="rotate(-32 150 160)"/>
+      <ellipse cx="181" cy="131" rx="9" ry="6" transform="rotate(-32 181 131)"/>
+    </g>
+    <!-- 花萼的小冠 —— 蓝莓的记号 -->
+    <g fill="none" stroke="#141A33" stroke-width="2" stroke-linecap="round" opacity=".85">
+      <g transform="translate(88 105)"><path d="M0 0v7M-6 1l-3 6M6 1l3 6M-8 4l-7 3M8 4l7 3"/></g>
+      <g transform="translate(144 91) scale(.92)"><path d="M0 0v7M-6 1l-3 6M6 1l3 6M-8 4l-7 3M8 4l7 3"/></g>
+      <g transform="translate(106 158) scale(.96)"><path d="M0 0v7M-6 1l-3 6M6 1l3 6"/></g>
+      <g transform="translate(158 150) scale(.88)"><path d="M0 0v7M-6 1l-3 6M6 1l3 6"/></g>
+    </g>
+  </g>
+</svg>

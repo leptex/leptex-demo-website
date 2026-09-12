@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="四季豆 Green beans">
+  <title>四季豆 · Green beans</title>
+  <defs>
+    <filter id="bw" x="-15%" y="-15%" width="130%" height="130%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="2" seed="3" result="t"/>
+      <feDisplacementMap in="SourceGraphic" in2="t" scale="2.2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <linearGradient id="pod" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#4B6551"/>
+      <stop offset="55%" stop-color="#6F8E74"/>
+      <stop offset="100%" stop-color="#8FAC91"/>
+    </linearGradient>
+  </defs>
+
+  <g filter="url(#bw)">
+    <!-- 叶与卷须 -->
+    <g fill="none" stroke="#3C4A3E" stroke-linecap="round">
+      <path d="M200 98c-6-18-2-34 8-46" stroke-width="3"/>
+      <path d="M214 46c14-4 18-18 8-24s-18 6-12 16 22 10 32 0" stroke-width="2.4"/>
+    </g>
+    <g stroke="#33453A" stroke-width="1.6" stroke-linejoin="round">
+      <path d="M206 50c-22-6-38-22-36-36 20-6 42 8 44 24Z" fill="#5F7A66" opacity=".9"/>
+      <path d="M172 16c12 10 24 22 32 32" fill="none" stroke="#2C3B31" stroke-width="1.1"/>
+    </g>
+
+    <!-- 豆荚 -->
+    <g fill="none" stroke-linecap="round">
+    <g>
+      <path d="M40 146C92 120 146 106 202 100" stroke="#2C3B30" stroke-width="22" opacity=".3"/>
+      <circle cx="63.5" cy="135.1" r="10.4" fill="url(#pod)"/>
+      <circle cx="91.3" cy="124.3" r="10.4" fill="url(#pod)"/>
+      <circle cx="119.5" cy="115.5" r="10.4" fill="url(#pod)"/>
+      <circle cx="148.0" cy="108.5" r="10.4" fill="url(#pod)"/>
+      <circle cx="176.9" cy="103.3" r="10.4" fill="url(#pod)"/>
+      <path d="M40 146C92 120 146 106 202 100" stroke="url(#pod)" stroke-width="19"/>
+      <path d="M40 146C92 120 146 106 202 100" stroke="#B6CCB7" stroke-width="2.6" opacity=".4" transform="translate(0 -6.1)"/>
+    </g>
+    <g>
+      <path d="M30 188C86 172 148 144 208 136" stroke="#2C3B30" stroke-width="21" opacity=".3"/>
+      <circle cx="55.6" cy="180.1" r="9.9" fill="url(#pod)"/>
+      <circle cx="86.2" cy="169.7" r="9.9" fill="url(#pod)"/>
+      <circle cx="117.5" cy="159.0" r="9.9" fill="url(#pod)"/>
+      <circle cx="149.1" cy="149.0" r="9.9" fill="url(#pod)"/>
+      <circle cx="180.9" cy="140.8" r="9.9" fill="url(#pod)"/>
+      <path d="M30 188C86 172 148 144 208 136" stroke="url(#pod)" stroke-width="18"/>
+      <path d="M30 188C86 172 148 144 208 136" stroke="#B6CCB7" stroke-width="2.6" opacity=".4" transform="translate(0 -5.6)"/>
+    </g>
+    <g>
+      <path d="M46 228C98 222 156 198 206 178" stroke="#2C3B30" stroke-width="20" opacity=".3"/>
+      <circle cx="69.8" cy="224.2" r="9.4" fill="url(#pod)"/>
+      <circle cx="107.7" cy="214.4" r="9.4" fill="url(#pod)"/>
+      <circle cx="145.8" cy="201.5" r="9.4" fill="url(#pod)"/>
+      <circle cx="183.0" cy="187.2" r="9.4" fill="url(#pod)"/>
+      <path d="M46 228C98 222 156 198 206 178" stroke="url(#pod)" stroke-width="17"/>
+      <path d="M46 228C98 222 156 198 206 178" stroke="#B6CCB7" stroke-width="2.6" opacity=".4" transform="translate(0 -5.1)"/>
+    </g>
+    </g>
+
+    <!-- 蒂 -->
+    <g fill="none" stroke="#3C4A3E" stroke-width="3" stroke-linecap="round" opacity=".75">
+      <path d="M40 146l-9 8M30 188l-9 7M46 228l-9 6"/>
+    </g>
+  </g>
+</svg>
