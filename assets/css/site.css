@@ -428,6 +428,7 @@ a { color: inherit; }
 
 /* ---------------------------------------------------------- 10. 时令册 */
 .crops { display: grid; grid-template-columns: repeat(auto-fit, minmax(212px, 1fr)); gap: clamp(16px, 2.2vw, 24px); }
+.crops--three { grid-template-columns: repeat(auto-fit, minmax(286px, 1fr)); }
 .crop {
   display: flex; flex-direction: column;
   background: color-mix(in srgb, var(--ground-raised) 70%, transparent);
@@ -553,6 +554,8 @@ a { color: inherit; }
 .asklist .inkline { margin-top: 0; }
 
 /* -------------------------------------------------------- 14. 问答清单 */
+/* 六张卡:1 / 2 / 3 列都能排满,不会留空格子露出网格底色 */
+.asks--three { grid-template-columns: repeat(auto-fit, minmax(296px, 1fr)) !important; }
 .asks { display: grid; grid-template-columns: repeat(auto-fit, minmax(238px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 5px; overflow: hidden; }
 .asks__item { display: flex; flex-direction: column; gap: 8px; padding: clamp(22px, 3vw, 30px); background: var(--ground); text-decoration: none; transition: background-color .28s var(--ease); }
 .asks__item:hover { background: var(--ground-raised); }
@@ -592,6 +595,7 @@ a { color: inherit; }
 .coda .mark { margin: 0 auto 24px; }
 
 .colophon { border-top: 1px solid var(--line); padding-block: clamp(46px, 6vw, 70px) 34px; position: relative; z-index: 1; }
+.colophon__grid--slim { grid-template-columns: 1.6fr minmax(0, 1fr) !important; }
 .colophon__grid { display: grid; grid-template-columns: 1.4fr repeat(2, minmax(0, 1fr)); gap: clamp(28px, 5vw, 56px); margin-bottom: clamp(36px, 5vw, 54px); }
 @media (max-width: 780px) { .colophon__grid { grid-template-columns: 1fr 1fr; } .colophon__brand { grid-column: 1 / -1; } }
 .colophon__brand p { font-size: 14px; color: var(--ink-4); max-width: 36ch; margin-top: 14px; }
