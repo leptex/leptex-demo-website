@@ -1,7 +1,8 @@
 /* Lucky Farm — every string on the page, one key per line, six languages.
-   Only keys the page actually references are bundled: no prices, no address,
-   no opening hours ever reach this file.
-   The seasonal announcement is the key `herald` — change it when the season turns. */
+   Only keys the page actually references are bundled. No prices, no address, no
+   opening hours and no fulfilment policy ever reach this file — those are answers,
+   and answers live in the conversation.
+   `herald` is the seasonal announcement: the only string here that expires. */
 window.LF_I18N = {
   langs: [{"code": "en", "name": "English", "tag": "EN"}, {"code": "zh", "name": "简体中文", "tag": "ZH"}, {"code": "es", "name": "Español", "tag": "ES"}, {"code": "ko", "name": "한국어", "tag": "KO"}, {"code": "vi", "name": "Tiếng Việt", "tag": "VI"}, {"code": "ja", "name": "日本語", "tag": "JA"}],
   dict: {
@@ -36,22 +37,6 @@ window.LF_I18N = {
   "ko": "직접 딸 수 있나요?",
   "vi": "Tôi tự hái được không?",
   "zh": "能自己挑吗?"
- },
- "a3.full": {
-  "en": "Will this still be available next week?",
-  "es": "¿Seguirá habiendo la semana que viene?",
-  "ja": "これは来週もありますか?",
-  "ko": "이건 다음 주에도 있을까요?",
-  "vi": "Tuần sau còn thứ này không?",
-  "zh": "这个下周还会有吗?"
- },
- "a3.q": {
-  "en": "Will there be more next week?",
-  "es": "¿Habrá más la semana que viene?",
-  "ja": "来週もありますか?",
-  "ko": "다음 주에도 있나요?",
-  "vi": "Tuần sau còn không?",
-  "zh": "下周还有吗?"
  },
  "ask.note": {
   "en": "Answered by AI using what the farmer told it. Opens in a new tab.",
@@ -94,12 +79,12 @@ window.LF_I18N = {
   "zh": "能大量订吗?"
  },
  "brand.tag": {
-  "en": "Redmond, WA · pick-up only",
-  "es": "Redmond, WA · solo recogida",
-  "ja": "ワシントン州レドモンド · 受け取りのみ",
-  "ko": "워싱턴주 레드먼드 · 픽업 전용",
-  "vi": "Redmond, WA · chỉ nhận tại vườn",
-  "zh": "华盛顿州 Redmond · 只做自取"
+  "en": "Redmond, WA",
+  "es": "Redmond, WA",
+  "ja": "ワシントン州レドモンド",
+  "ko": "워싱턴주 레드먼드",
+  "vi": "Redmond, WA",
+  "zh": "华盛顿州 Redmond"
  },
  "c.apple.name": {
   "en": "Red-fleshed apples",
@@ -174,12 +159,12 @@ window.LF_I18N = {
   "zh": "比如:周六下午还能来取吗?"
  },
  "foot.about": {
-  "en": "A small family farm in Redmond, WA. Nothing sprayed, picked the morning you come and get it.",
-  "es": "Una pequeña granja familiar en Redmond, WA. Sin pesticidas, recogido la mañana que vienes a por ello.",
-  "ja": "ワシントン州レドモンドの小さな家族農園。薬は使わず、取りに来られる日の朝にもぎます。",
-  "ko": "워싱턴주 레드먼드의 작은 가족 농장. 약을 치지 않고, 가지러 오시는 날 아침에 땁니다.",
-  "vi": "Một nông trại gia đình nhỏ ở Redmond, WA. Không phun thuốc, hái vào sáng bạn đến lấy.",
-  "zh": "华盛顿州 Redmond 的一家小小家庭农场。不打药,你来取的那天早上才摘。"
+  "en": "A family farm in Redmond, WA. Everything else, just ask.",
+  "es": "Una granja familiar en Redmond, WA. Lo demás, pregúntanos.",
+  "ja": "ワシントン州レドモンドの家族農園。あとは、聞いてください。",
+  "ko": "워싱턴주 레드먼드의 가족 농장. 나머지는 물어보세요.",
+  "vi": "Một nông trại gia đình ở Redmond, WA. Còn lại, cứ hỏi.",
+  "zh": "华盛顿州 Redmond 的一家家庭农场。别的,问一句就是了。"
  },
  "foot.anything": {
   "en": "Ask us anything",
@@ -206,12 +191,12 @@ window.LF_I18N = {
   "zh": "联系"
  },
  "foot.rights": {
-  "en": "© 2026 Lucky Farm · Redmond, WA · pick-up only, no shipping",
-  "es": "© 2026 Lucky Farm · Redmond, WA · solo recogida, sin envíos",
-  "ja": "© 2026 Lucky Farm · ワシントン州レドモンド · 受け取りのみ、配送なし",
-  "ko": "© 2026 Lucky Farm · 워싱턴주 레드먼드 · 픽업 전용, 배송 없음",
-  "vi": "© 2026 Lucky Farm · Redmond, WA · chỉ nhận tại vườn, không giao hàng",
-  "zh": "© 2026 幸运农场 · 华盛顿州 Redmond · 只做自取,不发货"
+  "en": "© 2026 Lucky Farm · Redmond, WA",
+  "es": "© 2026 Lucky Farm · Redmond, WA",
+  "ja": "© 2026 Lucky Farm · ワシントン州レドモンド",
+  "ko": "© 2026 Lucky Farm · 워싱턴주 레드먼드",
+  "vi": "© 2026 Lucky Farm · Redmond, WA",
+  "zh": "© 2026 幸运农场 · 华盛顿州 Redmond"
  },
  "grow.h2": {
   "en": "Six things. Ask about any of them.",
@@ -246,12 +231,12 @@ window.LF_I18N = {
   "zh": "山楂下来了 · 今年个头特别大"
  },
  "home.eyebrow": {
-  "en": "Redmond, WA · family farm · local pick-up",
-  "es": "Redmond, WA · granja familiar · recogida local",
-  "ja": "ワシントン州レドモンド · 家族農園 · 現地受け取り",
-  "ko": "워싱턴주 레드먼드 · 가족 농장 · 현장 수령",
-  "vi": "Redmond, WA · nông trại gia đình · nhận tại vườn",
-  "zh": "华盛顿州 Redmond · 家庭农场 · 本地自取"
+  "en": "Redmond, WA · family farm",
+  "es": "Redmond, WA · granja familiar",
+  "ja": "ワシントン州レドモンド · 家族農園",
+  "ko": "워싱턴주 레드먼드 · 가족 농장",
+  "vi": "Redmond, WA · nông trại gia đình",
+  "zh": "华盛顿州 Redmond · 家庭农场"
  },
  "home.h1": {
   "en": "What would you like today?",
@@ -285,6 +270,14 @@ window.LF_I18N = {
   "vi": "Nhận ở đâu?",
   "zh": "去哪儿取?"
  },
+ "l.cometoday": {
+  "en": "Can I come today?",
+  "es": "¿Puedo ir hoy?",
+  "ja": "今日行ってもいい?",
+  "ko": "오늘 가도 되나요?",
+  "vi": "Hôm nay tôi đến được không?",
+  "zh": "今天能来吗?"
+ },
  "l.days": {
   "en": "Which days?",
   "es": "¿Qué días?",
@@ -293,13 +286,61 @@ window.LF_I18N = {
   "vi": "Những ngày nào?",
   "zh": "这周几能取?"
  },
- "l.pests": {
-  "en": "Then what about pests?",
-  "es": "¿Y las plagas?",
-  "ja": "では虫は?",
-  "ko": "그럼 벌레는요?",
-  "vi": "Thế còn sâu bệnh?",
-  "zh": "那虫子怎么办?"
+ "l.friend": {
+  "en": "Can a friend collect?",
+  "es": "¿Puede recogerlo un amigo?",
+  "ja": "代理でも大丈夫?",
+  "ko": "대신 받아도 되나요?",
+  "vi": "Bạn tôi nhận thay được không?",
+  "zh": "能代取吗?"
+ },
+ "l.hold": {
+  "en": "Can you hold some for me?",
+  "es": "¿Me pueden apartar algo?",
+  "ja": "取り置きできますか?",
+  "ko": "좀 남겨두실 수 있나요?",
+  "vi": "Giữ lại cho tôi được không?",
+  "zh": "能给我留一些吗?"
+ },
+ "l.keep": {
+  "en": "How long will it keep?",
+  "es": "¿Cuánto dura?",
+  "ja": "どのくらいもつ?",
+  "ko": "얼마나 보관되나요?",
+  "vi": "Để được bao lâu?",
+  "zh": "能放多久?"
+ },
+ "l.left": {
+  "en": "How much is left?",
+  "es": "¿Cuánto queda?",
+  "ja": "あとどれくらい?",
+  "ko": "얼마나 남았나요?",
+  "vi": "Còn bao nhiêu?",
+  "zh": "还剩多少?"
+ },
+ "l.min": {
+  "en": "Is there a minimum?",
+  "es": "¿Hay un mínimo?",
+  "ja": "最低数量はある?",
+  "ko": "최소 주문이 있나요?",
+  "vi": "Có mức tối thiểu không?",
+  "zh": "最少买多少?"
+ },
+ "l.order": {
+  "en": "How do I order?",
+  "es": "¿Cómo hago el pedido?",
+  "ja": "どうやって注文するの?",
+  "ko": "어떻게 주문하나요?",
+  "vi": "Đặt hàng thế nào?",
+  "zh": "怎么下单?"
+ },
+ "l.pay": {
+  "en": "How do I pay?",
+  "es": "¿Cómo pago?",
+  "ja": "支払いは?",
+  "ko": "결제는 어떻게 하나요?",
+  "vi": "Trả tiền thế nào?",
+  "zh": "怎么付钱?"
  },
  "l.price": {
   "en": "How much today?",
@@ -309,6 +350,14 @@ window.LF_I18N = {
   "vi": "Hôm nay bao nhiêu?",
   "zh": "今天多少钱?"
  },
+ "l.recipe": {
+  "en": "What do people do with it?",
+  "es": "¿Qué hace la gente con esto?",
+  "ja": "みんなどう食べてる?",
+  "ko": "다들 어떻게 드시나요?",
+  "vi": "Mọi người thường chế biến thế nào?",
+  "zh": "大家都怎么吃?"
+ },
  "l.today": {
   "en": "What is ripe today?",
   "es": "¿Qué está maduro hoy?",
@@ -317,21 +366,13 @@ window.LF_I18N = {
   "vi": "Hôm nay có gì chín?",
   "zh": "今天有什么熟了?"
  },
- "l.visit": {
-  "en": "Can I walk the rows?",
-  "es": "¿Puedo recorrer las hileras?",
-  "ja": "畝を歩いてもいい?",
-  "ko": "고랑을 둘러봐도 되나요?",
-  "vi": "Tôi đi xem luống được không?",
-  "zh": "能去地里走走吗?"
- },
  "m.home.title": {
-  "en": "Lucky Farm 幸运农场 — Redmond, WA · fruit for local pick-up",
-  "es": "Lucky Farm 幸运农场 — Redmond, WA · fruta para recoger en la granja",
-  "ja": "Lucky Farm 幸运農場 — ワシントン州レドモンド · 受け取りの果物",
-  "ko": "Lucky Farm 幸运농장 — 워싱턴주 레드먼드 · 직접 받아가는 과일",
-  "vi": "Lucky Farm — Redmond, WA · trái cây nhận tại vườn",
-  "zh": "幸运农场 Lucky Farm — 华盛顿州 Redmond · 本地自取的水果"
+  "en": "Lucky Farm 幸运农场 — family fruit farm in Redmond, WA",
+  "es": "Lucky Farm 幸运农场 — granja frutal familiar en Redmond, WA",
+  "ja": "Lucky Farm 幸运農場 — ワシントン州レドモンドの家族果樹園",
+  "ko": "Lucky Farm 幸运농장 — 워싱턴주 레드먼드의 가족 과수원",
+  "vi": "Lucky Farm — nông trại trái cây gia đình ở Redmond, WA",
+  "zh": "幸运农场 Lucky Farm — 华盛顿州 Redmond 的家庭果园"
  },
  "menu.h2": {
   "en": "Pick a question, or type your own",
@@ -365,6 +406,14 @@ window.LF_I18N = {
   "vi": "Tôi nhận đơn ở đâu và khi nào?",
   "zh": "我去哪儿、什么时候取?"
  },
+ "q.cometoday": {
+  "en": "Can I come and pick something up today?",
+  "es": "¿Puedo pasar hoy a recoger algo?",
+  "ja": "今日、受け取りに行けますか?",
+  "ko": "오늘 가서 뭔가 받아올 수 있나요?",
+  "vi": "Hôm nay tôi ghé lấy được không?",
+  "zh": "我今天能过去拿点东西吗?"
+ },
  "q.days": {
   "en": "Which days can I pick up this week?",
   "es": "¿Qué días puedo recoger esta semana?",
@@ -372,6 +421,14 @@ window.LF_I18N = {
   "ko": "이번 주에 어느 요일에 받을 수 있나요?",
   "vi": "Tuần này nhận được vào những ngày nào?",
   "zh": "这周哪几天可以来取?"
+ },
+ "q.friend": {
+  "en": "Can a friend pick up my order for me?",
+  "es": "¿Puede un amigo recoger mi pedido?",
+  "ja": "友人が代わりに受け取れますか?",
+  "ko": "친구가 대신 받아가도 되나요?",
+  "vi": "Bạn tôi nhận đơn thay tôi được không?",
+  "zh": "可以让朋友替我来取吗?"
  },
  "q.herald": {
   "en": "Do you still have hawthorn, and how big are they this year?",
@@ -381,6 +438,22 @@ window.LF_I18N = {
   "vi": "Còn sơn tra không? Năm nay quả to cỡ nào?",
   "zh": "山楂现在还有吗?今年个头有多大?"
  },
+ "q.hold": {
+  "en": "Can you hold some for me until I get there?",
+  "es": "¿Pueden apartarme algo hasta que llegue?",
+  "ja": "取りに行くまで取り置きしてもらえますか?",
+  "ko": "제가 갈 때까지 좀 남겨두실 수 있나요?",
+  "vi": "Giữ lại giúp tôi tới khi tôi đến được không?",
+  "zh": "能不能给我留一些,等我过去拿?"
+ },
+ "q.keep": {
+  "en": "How long will it keep once I get it home?",
+  "es": "¿Cuánto dura una vez que llego a casa?",
+  "ja": "家に持ち帰ってからどのくらいもちますか?",
+  "ko": "집에 가져가면 얼마나 보관할 수 있나요?",
+  "vi": "Mang về nhà thì để được bao lâu?",
+  "zh": "拿回家之后能放多久?"
+ },
  "q.kids": {
   "en": "Can I bring my children to the farm?",
   "es": "¿Puedo llevar a mis hijos a la granja?",
@@ -389,13 +462,37 @@ window.LF_I18N = {
   "vi": "Tôi dẫn con tới vườn được không?",
   "zh": "可以带孩子来农场吗?"
  },
- "q.pests": {
-  "en": "If you do not spray, what do you do about pests?",
-  "es": "Si no rocían, ¿qué hacen con las plagas?",
-  "ja": "薬を撒かないなら、虫はどうしているのですか?",
-  "ko": "약을 치지 않으면 벌레는 어떻게 하시나요?",
-  "vi": "Không phun thuốc thì các bạn xử lý sâu bệnh thế nào?",
-  "zh": "不打药的话,虫子怎么办?"
+ "q.left": {
+  "en": "How much do you have left right now?",
+  "es": "¿Cuánto les queda ahora mismo?",
+  "ja": "今、どれくらい残っていますか?",
+  "ko": "지금 얼마나 남아 있나요?",
+  "vi": "Ngay bây giờ còn lại bao nhiêu?",
+  "zh": "现在还剩多少?"
+ },
+ "q.min": {
+  "en": "Is there a minimum order?",
+  "es": "¿Hay un pedido mínimo?",
+  "ja": "最低注文量はありますか?",
+  "ko": "최소 주문 수량이 있나요?",
+  "vi": "Có số lượng đặt tối thiểu không?",
+  "zh": "有最少起订量吗?"
+ },
+ "q.order": {
+  "en": "How do I place an order with you?",
+  "es": "¿Cómo hago un pedido con ustedes?",
+  "ja": "注文はどうやって出せばいいですか?",
+  "ko": "주문은 어떻게 넣으면 되나요?",
+  "vi": "Tôi đặt hàng với các bạn thế nào?",
+  "zh": "我怎么跟你们下单?"
+ },
+ "q.pay": {
+  "en": "How do I pay, and when?",
+  "es": "¿Cómo y cuándo pago?",
+  "ja": "支払いはどうやって、いつですか?",
+  "ko": "결제는 어떻게, 언제 하나요?",
+  "vi": "Tôi trả tiền bằng cách nào và khi nào?",
+  "zh": "我怎么付钱,什么时候付?"
  },
  "q.price": {
   "en": "What are today's prices?",
@@ -404,6 +501,14 @@ window.LF_I18N = {
   "ko": "오늘 가격이 어떻게 되나요?",
   "vi": "Giá hôm nay thế nào?",
   "zh": "今天的价格是多少?"
+ },
+ "q.recipe": {
+  "en": "What do people usually do with your hawthorn?",
+  "es": "¿Qué suele hacer la gente con su espino?",
+  "ja": "こちらの山査子は、みなさんどう食べますか?",
+  "ko": "여기 산사는 보통 어떻게 드시나요?",
+  "vi": "Sơn tra của các bạn mọi người thường làm gì?",
+  "zh": "你们的山楂,大家一般怎么吃?"
  },
  "q.ripe.apple": {
   "en": "How is a red-fleshed apple different from a normal one?",
@@ -468,14 +573,6 @@ window.LF_I18N = {
   "ko": "오늘 익어서 바로 가져갈 수 있는 건 뭔가요?",
   "vi": "Hôm nay có gì đã chín và sẵn sàng?",
   "zh": "今天有什么熟了、可以拿的?"
- },
- "q.visit": {
-  "en": "Can I walk the rows and see how you grow?",
-  "es": "¿Puedo recorrer las hileras y ver cómo cultivan?",
-  "ja": "畝を歩いて、どう育てているか見てもいいですか?",
-  "ko": "고랑을 걸으며 어떻게 기르시는지 봐도 될까요?",
-  "vi": "Tôi có thể đi dọc luống xem các bạn trồng thế nào không?",
-  "zh": "我可以去地里走走,看看你们怎么种的吗?"
  },
  "ui.ask1": {
   "en": "Ask",
