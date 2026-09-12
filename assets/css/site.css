@@ -335,6 +335,38 @@ a { color: inherit; }
 .hero--inner { min-height: 0; padding-bottom: clamp(150px, 20vw, 250px); }
 .hero__inner { text-align: center; }
 
+/* 时令快讯 —— 首屏最先看到的一条,整条可点,直接进对话 */
+.herald {
+  /* flex 而不是 inline-flex:让它独占一行,再用 auto 边距居中 */
+  display: flex; align-items: center; gap: 10px;
+  width: fit-content;
+  margin-inline: auto;
+  margin-bottom: clamp(16px, 2.4vw, 24px);
+  padding: 8px 17px 8px 13px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--cinnabar) 15%, transparent);
+  border: 1px solid color-mix(in srgb, var(--cinnabar) 42%, transparent);
+  color: var(--cinnabar);
+  font-size: 13.5px; letter-spacing: .03em;
+  text-decoration: none;
+  transition: background-color .25s var(--ease), transform .25s var(--ease);
+}
+.herald:hover { background: color-mix(in srgb, var(--cinnabar) 24%, transparent); transform: translateY(-1px); }
+.herald::after { content: "\2192"; font-size: 12px; opacity: .75; }
+.herald__dot {
+  width: 7px; height: 7px; flex: none; border-radius: 50%;
+  background: var(--cinnabar);
+  box-shadow: 0 0 0 0 color-mix(in srgb, var(--cinnabar) 70%, transparent);
+  animation: herald-pulse 2.4s ease-out infinite;
+}
+@keyframes herald-pulse {
+  0%   { box-shadow: 0 0 0 0 color-mix(in srgb, var(--cinnabar) 65%, transparent); }
+  70%  { box-shadow: 0 0 0 9px color-mix(in srgb, var(--cinnabar) 0%, transparent); }
+  100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--cinnabar) 0%, transparent); }
+}
+@media (prefers-reduced-motion: reduce) { .herald__dot { animation: none; } }
+@media (max-width: 480px) { .herald { font-size: 12.5px; padding: 7px 14px 7px 11px; } }
+
 .eyebrow {
   display: inline-flex; align-items: center; gap: 10px;
   font-size: 12px; letter-spacing: .2em;
@@ -464,6 +496,18 @@ a { color: inherit; }
   font-family: var(--font-serif); font-size: 19px; color: var(--ink);
 }
 .crop__unit { font-family: var(--font-sans); font-size: 12.5px; color: var(--ink-4); letter-spacing: .03em; }
+
+/* 作物卡整张就是一道门 —— 点哪儿都进对话 */
+.crop--link { text-decoration: none; }
+.crop--link .crop__body { flex-direction: row; align-items: baseline; justify-content: space-between; gap: 12px; }
+.crop__ask {
+  font-size: 12.5px; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--cinnabar); white-space: nowrap;
+  opacity: .5; transition: opacity .25s var(--ease), transform .25s var(--ease);
+}
+.crop__ask::after { content: " \2192"; }
+.crop--link:hover .crop__ask, .crop--link:focus-visible .crop__ask { opacity: 1; transform: translateX(2px); }
+@media (hover: none) { .crop__ask { opacity: 1; } }
 
 /* 行内问句 */
 .inkline {
