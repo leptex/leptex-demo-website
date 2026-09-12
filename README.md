@@ -29,6 +29,7 @@ package manager, nothing to install.
 - [Theming](#theming)
 - [Deployment](#deployment)
 - [Project structure](#project-structure)
+- [Configuring the assistant](#configuring-the-assistant)
 - [Compliance notes](#compliance-notes)
 - [License](#license)
 
@@ -235,6 +236,18 @@ The mark is the two characters of 山水 — *mountain* over *water* — drawn r
 reads in any language.
 
 ---
+
+## Configuring the assistant
+
+The page is half the product. The assistant that answers everything it refuses to
+answer is the other half, and its configuration lives in [`leptex/`](leptex/):
+the project brief, the reply instructions, the welcome message and suggested
+questions, plus a generated checklist of all 28 preset questions to verify the
+instructions against.
+
+That directory also documents **how to write reply instructions** — a six-block
+structure, the three rules that separate a conversation from an FAQ, and the
+weekly maintenance this pattern trades for never going stale.
 
 ## Compliance notes
 
