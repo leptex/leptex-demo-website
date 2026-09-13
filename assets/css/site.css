@@ -339,37 +339,59 @@ a { color: inherit; }
 .hero--inner { min-height: 0; padding-bottom: clamp(150px, 20vw, 250px); }
 .hero__inner { text-align: center; }
 
-/* 时令快讯 —— 首屏最先看到的一条,整条可点,直接进对话 */
+/* 时令快讯 —— 题款的样子:墨写一行,钤一方朱印,重要处朱批一笔。
+   不是网页上那种圆角胶囊 + 脉冲圆点 + 箭头。 */
 .herald {
-  /* flex 而不是 inline-flex:让它独占一行,再用 auto 边距居中 */
-  display: flex; align-items: center; gap: 10px;
+  display: flex; align-items: center; gap: 13px;
   width: fit-content;
-  margin-inline: auto;
-  margin-bottom: clamp(16px, 2.4vw, 24px);
-  padding: 8px 17px 8px 13px;
-  border-radius: 999px;
-  background: color-mix(in srgb, var(--cinnabar) 15%, transparent);
-  border: 1px solid color-mix(in srgb, var(--cinnabar) 42%, transparent);
-  color: var(--cinnabar);
-  font-size: 13.5px; letter-spacing: .03em;
+  margin: 0 auto clamp(20px, 3vw, 30px);
   text-decoration: none;
-  transition: background-color .25s var(--ease), transform .25s var(--ease);
+  color: var(--ink-2);
 }
-.herald:hover { background: color-mix(in srgb, var(--cinnabar) 24%, transparent); transform: translateY(-1px); }
-.herald::after { content: "\2192"; font-size: 12px; opacity: .75; }
-.herald__dot {
-  width: 7px; height: 7px; flex: none; border-radius: 50%;
-  background: var(--cinnabar);
-  box-shadow: 0 0 0 0 color-mix(in srgb, var(--cinnabar) 70%, transparent);
-  animation: herald-pulse 2.4s ease-out infinite;
+.herald__seal {
+  width: 32px; height: 32px; flex: none;
+  color: var(--cinnabar);
+  transform: rotate(-5deg);                 /* 印从来钤不正 */
+  animation: seal-press .7s var(--ease) backwards;
+  transition: transform .35s var(--ease);
 }
-@keyframes herald-pulse {
-  0%   { box-shadow: 0 0 0 0 color-mix(in srgb, var(--cinnabar) 65%, transparent); }
-  70%  { box-shadow: 0 0 0 9px color-mix(in srgb, var(--cinnabar) 0%, transparent); }
-  100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--cinnabar) 0%, transparent); }
+.herald__text {
+  position: relative;
+  font-family: var(--font-serif);
+  font-size: clamp(15px, 1.7vw, 17px);
+  letter-spacing: .14em;
+  padding-bottom: 6px;
 }
-@media (prefers-reduced-motion: reduce) { .herald__dot { animation: none; } }
-@media (max-width: 480px) { .herald { font-size: 12.5px; padding: 7px 14px 7px 11px; } }
+.herald__stroke {                           /* 朱批:载入时一笔描出,悬停时墨色压实 */
+  position: absolute; left: -4%; bottom: -4px;
+  width: 108%; height: 9px;
+  color: var(--cinnabar);
+  opacity: .55;
+  clip-path: inset(0 100% 0 0);
+  animation: brush-draw 1.1s .45s var(--ease) forwards;
+  transition: opacity .3s var(--ease);
+}
+.herald:hover .herald__stroke,
+.herald:focus-visible .herald__stroke { opacity: 1; }
+.herald:hover .herald__seal { transform: rotate(-2deg) scale(1.06); }
+.herald:hover .herald__text { color: var(--ink); }
+
+@keyframes seal-press {                     /* 钤下去:先大、再一压、落定 */
+  0%   { opacity: 0; transform: rotate(-12deg) scale(1.35); }
+  60%  { opacity: 1; transform: rotate(-3deg)  scale(.94); }
+  100% { opacity: 1; transform: rotate(-5deg)  scale(1); }
+}
+@keyframes brush-draw { to { clip-path: inset(0 0 0 0); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .herald__seal { animation: none; }
+  .herald__stroke { animation: none; clip-path: none; }
+}
+@media (max-width: 480px) {
+  .herald { gap: 10px; }
+  .herald__seal { width: 28px; height: 28px; }
+  .herald__text { letter-spacing: .08em; }
+}
 
 .eyebrow {
   display: inline-flex; align-items: center; gap: 10px;
