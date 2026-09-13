@@ -62,8 +62,9 @@ Three things fall out of that:
    and the merchant sees what pulled them in.
 
 The layout borrows its shape from openai.com — a centred question, an input, a row of suggestions —
-and its visual language from Chinese ink-wash landscape painting. Dark by default, with a light
-theme beside it.
+and its visual language from Chinese ink-wash landscape painting. Light by default, with a dark
+theme beside it. The first screen sits on a full ink landscape (`RANGE` in the build), kept pale
+and masked at the top so the headline, input and suggestions always read clearly above it.
 
 ---
 
@@ -187,18 +188,18 @@ shipped — which is how prices and addresses stay out of the bundle as well as 
 
 ## Theming
 
-Dark is the default. The toggle sets `data-theme` on `<html>` and persists the choice; an inline
+Light is the default. The toggle sets `data-theme` on `<html>` and persists the choice; an inline
 script in `<head>` applies it before first paint, so there is no flash.
 
 All colour lives in two blocks at the top of `site.css`: `:root` for dark, `:root[data-theme="light"]`
 for light. Both define the same token names, so changing one concept changes both themes.
 
-To follow the operating system instead of defaulting to dark:
+To follow the operating system instead of defaulting to light:
 
 ```js
 var t = localStorage.getItem('lf.theme');
 document.documentElement.setAttribute('data-theme',
-  t || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'));
+  t || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
 ```
 
 The six illustrations are always mounted on a paper-coloured plate (`.plate`), like scrolls hung on
@@ -239,7 +240,7 @@ robots.txt  sitemap.xml  CNAME
 ```
 
 Colour passes WCAG AA in both themes. The two things that did not, and now do: the
-muted ink that carries the *"answered by AI"* disclosure, and the text on the
+muted ink that carries the *"Answers by Leptex"* line, and the text on the
 coral button in dark mode — no single accent can be both bright enough to read as
 text on near-black and dark enough to sit under paper-white, so the button prints
 dark ink on coral instead. The brand mark stays paper-white; logotypes are exempt.

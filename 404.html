@@ -1,14 +1,14 @@
 <!doctype html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-aER6E+I4RXy+12AYZ3gJBusCVxXZ8zpLLxlEnBlsxqQ='; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; form-action https://leptex.com; base-uri 'none'; object-src 'none'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-xqC5Pru1c4XzSsn70cwq1mEt/GTLXIJEWgyobVo1njk='; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; form-action https://leptex.com; base-uri 'none'; object-src 'none'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
-<script>try{var t=localStorage.getItem('lf.theme');document.documentElement.setAttribute('data-theme',t==='light'?'light':'dark')}catch(e){}</script>
+<script>try{var t=localStorage.getItem('lf.theme');document.documentElement.setAttribute('data-theme',t==='dark'?'dark':'light')}catch(e){}</script>
 <title data-i18n="nf.title">Not here — Lucky Farm</title>
 <meta name="description" content="A family fruit farm in Redmond, WA. Ask us anything and get today's answer, in your own language.">
-<meta name="theme-color" content="#0C0D10">
+<meta name="theme-color" content="#F4F0E6">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <meta name="robots" content="noindex">
 <meta property="og:type" content="website">
@@ -59,30 +59,67 @@
 <main id="main">
   <section class="hero">
     <span class="moondisc" aria-hidden="true"></span>
-    <div class="range" aria-hidden="true">
-      <svg viewBox="0 0 1440 460" preserveAspectRatio="xMidYMax slice">
+    <div class="range range--scape" aria-hidden="true">
+      <svg viewBox="0 0 1440 640" preserveAspectRatio="xMidYMax slice">
         <defs>
-          <filter id="mtn" x="-8%" y="-20%" width="116%" height="150%">
-            <feTurbulence type="fractalNoise" baseFrequency="0.012 0.028" numOctaves="3" seed="11" result="t"/>
-            <feDisplacementMap in="SourceGraphic" in2="t" scale="15" xChannelSelector="R" yChannelSelector="G"/>
+          <filter id="mtn" filterUnits="userSpaceOnUse" x="-200" y="-200" width="1840" height="1040">
+            <feTurbulence type="fractalNoise" baseFrequency="0.011 0.04" numOctaves="4" seed="11" result="t"/>
+            <feDisplacementMap in="SourceGraphic" in2="t" scale="18" xChannelSelector="R" yChannelSelector="G"/>
           </filter>
-          <filter id="mist" x="-30%" y="-400%" width="160%" height="900%"><feGaussianBlur stdDeviation="15"/></filter>
+          
+          <filter id="mist" filterUnits="userSpaceOnUse" x="-200" y="-200" width="1840" height="1040"><feGaussianBlur stdDeviation="18"/></filter>
+          <linearGradient id="fadeup" x1="0" y1="0" x2="0" y2="1">
+            <stop offset=".22" stop-color="#fff" stop-opacity="0"/><stop offset=".62" stop-color="#fff" stop-opacity="1"/>
+          </linearGradient>
+          <mask id="rockfade"><rect width="1440" height="640" fill="url(#fadeup)"/></mask>
         </defs>
-        <g filter="url(#mtn)" fill="currentColor">
-          <path opacity=".15" d="M0 300C70 286 110 258 150 248 190 238 214 262 258 246 300 230 318 178 372 148 420 122 452 168 502 186 548 202 578 178 626 186 676 194 700 226 752 232 808 238 838 206 892 196 944 186 972 218 1024 222 1078 226 1106 190 1160 184 1214 178 1246 214 1300 220 1352 226 1394 206 1440 212V460H0Z"/>
-          <path opacity=".25" d="M0 372C60 360 96 338 148 330 200 322 226 348 276 340 330 332 356 288 412 272 466 256 494 304 548 316 600 328 630 300 684 298 740 296 768 334 824 338 878 342 906 312 960 308 1014 304 1044 338 1098 342 1152 346 1182 314 1236 312 1290 310 1330 338 1380 340 1406 341 1424 336 1440 334V460H0Z"/>
-          <path opacity=".46" d="M0 430C74 424 112 406 170 402 228 398 258 418 316 412 374 406 400 380 462 374 524 368 552 396 614 400 676 404 704 384 766 382 828 380 856 404 918 406 980 408 1010 388 1072 386 1134 384 1166 406 1228 408 1290 410 1330 394 1386 394 1410 394 1428 397 1440 397V460H0Z"/>
+        <!-- far peaks: 高远, pale 青 -->
+        <g fill="var(--shan-far)" filter="url(#mtn)" opacity=".32" mask="url(#rockfade)">
+          <path d="M0 400C40 380 70 300 96 250 118 210 130 150 150 140 170 132 176 196 196 230 214 260 240 250 262 300 290 350 330 360 370 372 420 386 470 360 520 380V640H0Z"/>
+          <path d="M900 390C950 370 980 320 1010 280 1036 244 1052 190 1076 160 1096 138 1110 150 1124 196 1138 240 1160 230 1180 200 1204 166 1224 120 1250 110 1276 102 1290 160 1306 214 1324 270 1360 300 1400 330 1420 344 1440 350V640H900Z"/>
+          <path d="M380 520C470 500 560 470 640 462 700 456 740 474 790 470 850 466 930 490 1040 520V640H380Z"/>
         </g>
-        <g fill="var(--mist)" filter="url(#mist)" opacity=".5">
-          <ellipse cx="430" cy="332" rx="370" ry="14"/>
-          <ellipse cx="1090" cy="274" rx="300" ry="11"/>
+        <g fill="var(--mist)" filter="url(#mist)" opacity=".9">
+          <ellipse cx="240" cy="400" rx="330" ry="26"/><ellipse cx="1180" cy="380" rx="320" ry="24"/>
         </g>
-        <g fill="currentColor" stroke="currentColor" opacity=".45" filter="url(#mtn)">
-          <g transform="translate(152 416)"><path d="M0 0v-15" stroke-width="2.4" stroke-linecap="round"/><ellipse cy="-21" rx="9" ry="6"/><ellipse cx="-6" cy="-15" rx="6" ry="4"/><ellipse cx="7" cy="-16" rx="6" ry="4"/></g>
-          <g transform="translate(190 410) scale(.82)"><path d="M0 0v-15" stroke-width="2.8" stroke-linecap="round"/><ellipse cy="-21" rx="9" ry="6"/><ellipse cx="-6" cy="-15" rx="6" ry="4"/><ellipse cx="7" cy="-16" rx="6" ry="4"/></g>
-          <g transform="translate(238 402) scale(1.05)"><path d="M0 0v-15" stroke-width="2.2" stroke-linecap="round"/><ellipse cy="-21" rx="9" ry="6"/><ellipse cx="-6" cy="-15" rx="6" ry="4"/><ellipse cx="7" cy="-16" rx="6" ry="4"/></g>
-          <g transform="translate(292 394) scale(.9)"><path d="M0 0v-15" stroke-width="2.6" stroke-linecap="round"/><ellipse cy="-21" rx="9" ry="6"/><ellipse cx="-6" cy="-15" rx="6" ry="4"/><ellipse cx="7" cy="-16" rx="6" ry="4"/></g>
+        <!-- mid cliffs, 皴 by displacement -->
+        <g fill="var(--shan-mid)" filter="url(#mtn)" opacity=".38" mask="url(#rockfade)">
+          <path d="M-20 640V420C10 410 36 360 52 320 66 284 70 236 92 220 112 206 126 246 136 290 146 334 170 350 196 346 222 342 236 310 256 300 280 290 300 330 318 380 334 426 380 450 440 470 500 490 560 510 600 540V640Z"/>
+          <path d="M1460 640V400C1430 396 1410 350 1394 300 1380 256 1372 210 1352 196 1330 182 1316 222 1304 262 1290 306 1270 318 1248 300 1226 282 1210 300 1196 340 1180 390 1140 430 1080 460 1020 490 960 520 920 548V640Z"/>
         </g>
+        <g fill="var(--mist)" filter="url(#mist)" opacity=".85">
+          <ellipse cx="300" cy="500" rx="360" ry="22"/><ellipse cx="1150" cy="470" rx="340" ry="20"/>
+        </g>
+        <!-- near shore: ink rocks with 赭 tops -->
+        <g filter="url(#mtn)">
+          <path fill="var(--shan-near)" opacity=".5" d="M-20 640V540C30 520 70 500 120 504 170 508 196 530 240 534 290 538 320 520 360 528 400 536 420 560 440 590 452 610 470 630 480 640Z"/>
+          <path fill="var(--ochre)" opacity=".38" d="M-20 552C40 528 90 512 136 516 180 520 204 540 250 544 300 548 330 530 368 538 330 552 290 560 240 556 190 552 150 534 110 534 60 536 20 556-20 566Z"/>
+          <path fill="var(--shan-near)" opacity=".48" d="M1460 640V556C1410 540 1370 520 1320 526 1270 532 1240 552 1190 550 1140 548 1110 530 1070 540 1034 550 1010 580 990 610 982 624 974 634 968 640Z"/>
+          <path fill="var(--ochre)" opacity=".34" d="M1460 566C1410 548 1370 534 1320 538 1270 542 1240 560 1190 560 1140 560 1110 546 1076 552 1110 566 1150 574 1196 572 1250 570 1290 552 1330 552 1380 552 1420 570 1460 580Z"/>
+        </g>
+        <!-- pines -->
+        <g fill="var(--shan-near)" stroke="var(--shan-near)" opacity=".6" filter="url(#mtn)">
+          <g transform="translate(70 520) scale(1.10 1.10)"><path d="M0 0C2-14-3-28 2-44 5-54 12-60 20-66" fill="none" stroke-width="3.2" stroke-linecap="round"/><path d="M0-30c-8-6-18-8-30-6" fill="none" stroke-width="2" stroke-linecap="round"/><ellipse cx="22" cy="-68" rx="24" ry="6"/><ellipse cx="-30" cy="-38" rx="18" ry="5"/><ellipse cx="6" cy="-50" rx="15" ry="4.5"/><ellipse cx="34" cy="-60" rx="12" ry="3.5"/></g><g transform="translate(160 512) scale(-0.80 0.80)"><path d="M0 0C2-14-3-28 2-44 5-54 12-60 20-66" fill="none" stroke-width="3.2" stroke-linecap="round"/><path d="M0-30c-8-6-18-8-30-6" fill="none" stroke-width="2" stroke-linecap="round"/><ellipse cx="22" cy="-68" rx="24" ry="6"/><ellipse cx="-30" cy="-38" rx="18" ry="5"/><ellipse cx="6" cy="-50" rx="15" ry="4.5"/><ellipse cx="34" cy="-60" rx="12" ry="3.5"/></g><g transform="translate(1290 534) scale(-0.95 0.95)"><path d="M0 0C2-14-3-28 2-44 5-54 12-60 20-66" fill="none" stroke-width="3.2" stroke-linecap="round"/><path d="M0-30c-8-6-18-8-30-6" fill="none" stroke-width="2" stroke-linecap="round"/><ellipse cx="22" cy="-68" rx="24" ry="6"/><ellipse cx="-30" cy="-38" rx="18" ry="5"/><ellipse cx="6" cy="-50" rx="15" ry="4.5"/><ellipse cx="34" cy="-60" rx="12" ry="3.5"/></g>
+        </g>
+        <!-- pavilion on the right shore -->
+        <g fill="var(--shan-near)" opacity=".7" transform="translate(1210 548)">
+          <path d="M-34-26C-20-30-8-40 0-48 8-40 20-30 34-26 22-24 12-24 0-26-12-24-22-24-34-26Z"/>
+          <rect x="-22" y="-26" width="3" height="24"/><rect x="19" y="-26" width="3" height="24"/>
+          <rect x="-26" y="-4" width="52" height="4"/>
+        </g>
+        <!-- water: a few dry strokes, a boat, a line of birds -->
+        <g stroke="var(--shan-mid)" stroke-linecap="round" opacity=".32" fill="none">
+          <path d="M520 590h120M700 604h90M820 584h150M560 618h70M880 624h110" stroke-width="2"/>
+        </g>
+        <g fill="var(--shan-near)" opacity=".75" transform="translate(760 580)">
+          <path d="M-30 0C-16 8 16 8 30 0Z"/><path d="M-4 0v-12" stroke="var(--shan-near)" stroke-width="1.6"/>
+          <path d="M-8-4c3-6 7-8 8-8" stroke="var(--shan-near)" stroke-width="1.2" fill="none"/>
+        </g>
+        <g fill="none" stroke="var(--shan-near)" stroke-width="1.8" stroke-linecap="round" opacity=".55">
+          <path d="M640 470q6-5 12 0q6-5 12 0"/><path d="M690 452q5-4 10 0q5-4 10 0"/><path d="M724 482q4-3 8 0q4-3 8 0"/>
+        </g>
+        <!-- 一点朱: a red-leafed tree by the pavilion -->
+        <ellipse cx="1150" cy="536" rx="14" ry="10" fill="var(--cinnabar)" opacity=".5" filter="url(#mtn)"/>
       </svg>
     </div>
 
@@ -102,7 +139,7 @@
         <a class="pill" href="https://leptex.com/web/bu8nbabMeDZu?q=What%20are%20today%27s%20prices%3F&amp;e=notfound" target="_blank" rel="noopener" data-q="q.price"><span class="pill__dot" aria-hidden="true"></span><span data-i18n="l.price">How much today?</span></a>
         <a class="pill" href="https://leptex.com/web/bu8nbabMeDZu?q=What%20is%20ripe%20and%20ready%20today%3F&amp;e=notfound" target="_blank" rel="noopener" data-q="q.today"><span class="pill__dot" aria-hidden="true"></span><span data-i18n="l.today">What is ripe today?</span></a>
       </div>
-      <p class="ask__note" data-i18n="ask.note">Answered by AI using what the farmer told it. Opens in a new tab.</p>
+      <p class="ask__note" data-i18n="ask.note">Answers by Leptex · opens in a new tab</p>
       <p class="back-link"><a class="inkline inkline--lead" href="./" data-i18n="nf.home">Back to the farm</a></p>
     </div>
   </section>
@@ -135,7 +172,7 @@
     </div>
     <div class="colophon__foot">
       <span data-i18n="foot.rights">© 2026 Lucky Farm · Redmond, WA</span>
-      <span data-i18n="foot.by">Answers by Leptex</span>
+      <a href="https://leptex.com" target="_blank" rel="noopener" data-i18n="foot.by">Powered by Leptex</a>
     </div>
   </div>
 </footer>
