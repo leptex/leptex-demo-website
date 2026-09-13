@@ -1,5 +1,5 @@
-/* Lucky Farm — every string on the page, one key per line, six languages.
-   Only keys the page actually references are bundled. No prices, no address, no
+/* Lucky Farm — every string on the site, one key per line, six languages.
+   Only keys the pages actually reference are bundled. No prices, no address, no
    opening hours and no fulfilment policy ever reach this file — those are answers,
    and answers live in the conversation.
    `herald` is the seasonal announcement: the only string here that expires. */
@@ -397,6 +397,54 @@ window.LF_I18N = {
   "ko": "문의하기",
   "vi": "Hỏi chúng tôi",
   "zh": "问一问"
+ },
+ "nf.eyebrow": {
+  "en": "404",
+  "es": "404",
+  "ja": "404",
+  "ko": "404",
+  "vi": "404",
+  "zh": "404"
+ },
+ "nf.h1": {
+  "en": "This page is not here",
+  "es": "Esta página no está aquí",
+  "ja": "このページはありません",
+  "ko": "이 페이지는 없습니다",
+  "vi": "Trang này không còn ở đây",
+  "zh": "这一页没有了"
+ },
+ "nf.home": {
+  "en": "Back to the farm",
+  "es": "Volver a la granja",
+  "ja": "農園に戻る",
+  "ko": "농장으로 돌아가기",
+  "vi": "Về lại nông trại",
+  "zh": "回农场"
+ },
+ "nf.ph": {
+  "en": "What were you looking for?",
+  "es": "¿Qué estabas buscando?",
+  "ja": "何をお探しでしたか?",
+  "ko": "무엇을 찾고 계셨나요?",
+  "vi": "Bạn đang tìm gì?",
+  "zh": "你本来想找什么?"
+ },
+ "nf.sub": {
+  "en": "It may never have been. Either way, ask — that is where the answers were anyway.",
+  "es": "Puede que nunca lo estuviera. En cualquier caso, pregunta: ahí es donde estaban las respuestas.",
+  "ja": "もともと無かったのかもしれません。どちらにせよ、聞いてください。答えはもとからそちらにあります。",
+  "ko": "애초에 없었을 수도 있습니다. 어느 쪽이든 물어보세요. 답은 원래 거기에 있습니다.",
+  "vi": "Có thể nó chưa từng tồn tại. Dù sao thì cứ hỏi — câu trả lời vốn nằm ở đó.",
+  "zh": "也可能从来就没有过。不管怎样,问一句 —— 答案本来就在那边。"
+ },
+ "nf.title": {
+  "en": "Not here — Lucky Farm",
+  "es": "Aquí no está — Lucky Farm",
+  "ja": "ここにはありません — Lucky Farm",
+  "ko": "여기엔 없습니다 — Lucky Farm",
+  "vi": "Không có ở đây — Lucky Farm",
+  "zh": "这页没有了 — 幸运农场"
  },
  "q.collect": {
   "en": "Where and when do I collect my order?",

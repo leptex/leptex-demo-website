@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-aER6E+I4RXy+12AYZ3gJBusCVxXZ8zpLLxlEnBlsxqQ='; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; form-action https://leptex.com; base-uri 'none'; object-src 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <script>try{var t=localStorage.getItem('lf.theme');document.documentElement.setAttribute('data-theme',t==='light'?'light':'dark')}catch(e){}</script>
 <title data-i18n="m.home.title">Lucky Farm 幸运农场 — family fruit farm in Redmond, WA</title>
 <meta name="description" content="A family fruit farm in Redmond, WA. Ask us anything and get today's answer, in your own language.">
@@ -13,6 +15,11 @@
 <meta property="og:title" content="Lucky Farm 幸运农场 — family fruit farm in Redmond, WA">
 <meta property="og:description" content="A family fruit farm in Redmond, WA. Ask us anything and get today's answer, in your own language.">
 <meta property="og:url" content="https://luckyfarm.leptex.shop/">
+<meta property="og:image" content="https://luckyfarm.leptex.shop/assets/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Lucky Farm — What would you like today?">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&amp;family=Noto+Sans+SC:wght@300;400;500&amp;family=Noto+Sans+KR:wght@300;400;500&amp;family=Noto+Serif+SC:wght@300;400;500&amp;family=Noto+Serif+JP:wght@300;400;500&amp;display=swap">
@@ -24,7 +31,7 @@
 <header class="masthead">
   <div class="wrap masthead__inner">
     <a class="brand" href="./">
-      <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M1.5 14.6 7.2 6.4l3.4 4.6L15 3l7.5 11.6Z" fill="#FFF6F1"/><path d="M2.4 18.2c2.4-1.5 4.3-1.5 6.6 0 2.3 1.5 4.2 1.5 6.6 0 2.3-1.5 4.2-1.5 6.4 0" stroke="#FFF6F1" stroke-width="1.7" stroke-linecap="round" fill="none" opacity=".75"/></svg></span>
+      <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M1.5 14.6 7.2 6.4l3.4 4.6L15 3l7.5 11.6Z" fill="currentColor"/><path d="M2.4 18.2c2.4-1.5 4.3-1.5 6.6 0 2.3 1.5 4.2 1.5 6.6 0 2.3-1.5 4.2-1.5 6.4 0" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" fill="none" opacity=".75"/></svg></span>
       <span>
         <span class="brand__name"><b>Lucky Farm</b><i>幸运农场</i></span>
         <span class="brand__tag" data-i18n="brand.tag">Redmond, WA</span>
@@ -80,7 +87,7 @@
     </div>
 
     <div class="wrap hero__inner">
-      <a class="herald" href="https://leptex.com/web/bu8nbabMeDZu?q=Do%20you%20still%20have%20hawthorn%2C%20and%20how%20big%20are%20they%20this%20year%3F&amp;e=home" target="_blank" rel="noopener" data-q="q.herald"><span class="herald__dot" aria-hidden="true"></span><span data-i18n="herald">Hawthorn is in · and this year they are big</span></a>
+      <a class="herald" href="https://leptex.com/web/bu8nbabMeDZu?q=Do%20you%20still%20have%20hawthorn%2C%20and%20how%20big%20are%20they%20this%20year%3F&amp;e=home" target="_blank" rel="noopener" data-q="q.herald"><svg class="herald__seal" viewBox="0 0 40 40" aria-hidden="true"><defs><filter id="stampink" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="7" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="1.8" xChannelSelector="R" yChannelSelector="G"/></filter></defs><g filter="url(#stampink)"><rect x="3" y="3" width="34" height="34" rx="3" fill="currentColor"/><path d="M27 7.5c-2 4-5.5 7.2-9.5 9.4" fill="none" stroke="#F6EFE3" stroke-width="1.9" stroke-linecap="round"/><path d="M22.5 11.5c3 .2 5.4 1.8 6.6 4.2" fill="none" stroke="#F6EFE3" stroke-width="1.5" stroke-linecap="round"/><circle cx="14.2" cy="19.4" r="4.4" fill="#F6EFE3"/><circle cx="22.6" cy="22.6" r="4.9" fill="#F6EFE3"/><circle cx="15.4" cy="28.6" r="4.1" fill="#F6EFE3"/><circle cx="25.8" cy="30.2" r="3.4" fill="#F6EFE3"/></g></svg><span class="herald__text"><span data-i18n="herald">Hawthorn is in · and this year they are big</span><svg class="herald__stroke" viewBox="0 0 200 10" preserveAspectRatio="none" aria-hidden="true"><defs><filter id="brushink" x="-2%" y="-60%" width="104%" height="220%"><feTurbulence type="fractalNoise" baseFrequency="0.06 0.9" numOctaves="2" seed="4" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.2" xChannelSelector="R" yChannelSelector="G"/></filter></defs><path filter="url(#brushink)" fill="currentColor" d="M1 6.2C22 4.6 58 3.4 104 3.9 142 4.3 172 4.9 199 3.4 190 6.4 164 7.6 120 7.3 76 7 36 7.9 1 6.2Z"/></svg></span></a>
       <p class="eyebrow" data-i18n="home.eyebrow">Redmond, WA · family farm</p>
       <h1 data-i18n="home.h1">What would you like today?</h1>
       <p class="hero__sub" data-i18n="home.sub">Ask, and a person's answer comes back — today's, in your own language.</p>
@@ -225,13 +232,13 @@
           <span class="asks__go" data-i18n="ui.go">Ask</span>
         </a>
       </div>
-      <div class="note-box rise" style="margin-top:clamp(38px,5vw,56px)" data-i18n="why.note">You will not find prices, an address or opening hours on this page. Those change week to week, and a page that is out of date is worse than no page at all — so every one of them is answered in the chat instead, where the answer matches the day you are asking.</div>
+      <div class="note-box note-box--spaced rise" data-i18n="why.note">You will not find prices, an address or opening hours on this page. Those change week to week, and a page that is out of date is worse than no page at all — so every one of them is answered in the chat instead, where the answer matches the day you are asking.</div>
     </div>
   </section>
   <section class="section coda">
     <div class="wrap">
       <div class="rise">
-        <span class="mark mark--lg" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M1.5 14.6 7.2 6.4l3.4 4.6L15 3l7.5 11.6Z" fill="#FFF6F1"/><path d="M2.4 18.2c2.4-1.5 4.3-1.5 6.6 0 2.3 1.5 4.2 1.5 6.6 0 2.3-1.5 4.2-1.5 6.4 0" stroke="#FFF6F1" stroke-width="1.7" stroke-linecap="round" fill="none" opacity=".75"/></svg></span>
+        <span class="mark mark--lg" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M1.5 14.6 7.2 6.4l3.4 4.6L15 3l7.5 11.6Z" fill="currentColor"/><path d="M2.4 18.2c2.4-1.5 4.3-1.5 6.6 0 2.3 1.5 4.2 1.5 6.6 0 2.3-1.5 4.2-1.5 6.4 0" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" fill="none" opacity=".75"/></svg></span>
         <h2 data-i18n="coda.h2">Still wondering about something?</h2>
         <p class="lede" data-i18n="coda.lede">Type it the way you would say it out loud. Any language works.</p>
       <form class="ask" data-ask action="https://leptex.com/web/bu8nbabMeDZu" method="get" target="_blank" rel="noopener">
@@ -247,7 +254,7 @@
 </main>
 
 <a class="hail" href="https://leptex.com/web/bu8nbabMeDZu?e=home" target="_blank" rel="noopener">
-  <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M1.5 14.6 7.2 6.4l3.4 4.6L15 3l7.5 11.6Z" fill="#FFF6F1"/><path d="M2.4 18.2c2.4-1.5 4.3-1.5 6.6 0 2.3 1.5 4.2 1.5 6.6 0 2.3-1.5 4.2-1.5 6.4 0" stroke="#FFF6F1" stroke-width="1.7" stroke-linecap="round" fill="none" opacity=".75"/></svg></span>
+  <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M1.5 14.6 7.2 6.4l3.4 4.6L15 3l7.5 11.6Z" fill="currentColor"/><path d="M2.4 18.2c2.4-1.5 4.3-1.5 6.6 0 2.3 1.5 4.2 1.5 6.6 0 2.3-1.5 4.2-1.5 6.4 0" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" fill="none" opacity=".75"/></svg></span>
   <span class="hail__label" data-i18n="hail.label">Ask the farm</span>
 </a>
 
@@ -256,7 +263,7 @@
     <div class="colophon__grid colophon__grid--slim">
       <div class="colophon__brand">
         <a class="brand" href="./">
-          <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M1.5 14.6 7.2 6.4l3.4 4.6L15 3l7.5 11.6Z" fill="#FFF6F1"/><path d="M2.4 18.2c2.4-1.5 4.3-1.5 6.6 0 2.3 1.5 4.2 1.5 6.6 0 2.3-1.5 4.2-1.5 6.4 0" stroke="#FFF6F1" stroke-width="1.7" stroke-linecap="round" fill="none" opacity=".75"/></svg></span>
+          <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M1.5 14.6 7.2 6.4l3.4 4.6L15 3l7.5 11.6Z" fill="currentColor"/><path d="M2.4 18.2c2.4-1.5 4.3-1.5 6.6 0 2.3 1.5 4.2 1.5 6.6 0 2.3-1.5 4.2-1.5 6.4 0" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" fill="none" opacity=".75"/></svg></span>
           <span class="brand__name"><b>Lucky Farm</b><i>幸运农场</i></span>
         </a>
         <p data-i18n="foot.about">A family farm in Redmond, WA. Everything else, just ask.</p>
