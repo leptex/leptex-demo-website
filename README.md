@@ -30,6 +30,7 @@ package manager, nothing to install.
 - [Deployment](#deployment)
 - [Project structure](#project-structure)
 - [Configuring the assistant](#configuring-the-assistant)
+- [Security](#security)
 - [Compliance notes](#compliance-notes)
 - [License](#license)
 
@@ -259,6 +260,28 @@ instructions against.
 That directory also documents **how to write reply instructions** — a six-block
 structure, the three rules that separate a conversation from an FAQ, and the
 weekly maintenance this pattern trades for never going stale.
+
+## Security
+
+The repository is public, so it is written to hold nothing private.
+
+- **No credentials anywhere in history.** Scanned with gitleaks across every branch and
+  every pull-request ref, plus pattern checks for cloud keys, tokens, private keys and
+  connection strings. `.gitignore` blocks `.env`, key files and credential JSON.
+- **Content Security Policy.** GitHub Pages cannot send response headers, so the policy
+  is a `<meta>` tag: same-origin scripts only, the one inline theme bootstrap allowed by
+  its SHA-256 hash, styles from self and Google Fonts only, no inline style attributes,
+  no network calls, and forms may only submit to `leptex.com`. The build computes the
+  hash from the script itself, so editing that script cannot silently break the policy.
+- **No injection surface.** Language switching writes `textContent`; links are built
+  with `URLSearchParams`. Every `target="_blank"` carries `rel="noopener"`.
+- **Nothing about visitors is stored.** `localStorage` holds two preferences: theme and
+  language.
+
+**Do not commit filled-in reply instructions.** `leptex/reply-instructions.md` is a
+template with `[FILL IN]` slots. A family farm's address is often a home address —
+paste the completed text into the Leptex dashboard only, never back into this
+repository, where it would stay in public history for good.
 
 ## Compliance notes
 

@@ -646,6 +646,10 @@ a { color: inherit; }
   font-size: 15px; color: var(--ink-3);
 }
 
+/* 原先写在 style 属性里的两处间距 —— 挪到这里,CSP 才能不放行内联样式 */
+.note-box--spaced { margin-top: clamp(38px, 5vw, 56px); }
+.back-link { margin-top: 24px; }
+
 .tenets { list-style: none; margin: 0; padding: 0; }
 .tenets li {
   display: flex; align-items: baseline; gap: 16px;
