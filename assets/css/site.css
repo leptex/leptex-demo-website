@@ -20,6 +20,10 @@
   --line:  color-mix(in srgb, var(--ink-4) 42%, transparent);
   --mist:  #2A2F38;           /* 山间的雾,永远比地亮 */
   --range: #9AA0AC;           /* 月下的山 */
+  --shan-far:  #3E4A52;
+  --shan-mid:  #56646A;
+  --shan-near: #7E8A88;
+  --ochre:     #8A6E4A;
 
   --cinnabar:  #DD6650;       /* 朱砂,夜里要发光 —— 当文字用 */
   --on-cinnabar: #26110B;     /* 印在朱砂上的墨。夜里珊瑚太亮,纸白只有 3.2:1 */
@@ -58,6 +62,10 @@
   --line:  color-mix(in srgb, var(--ink-4) 52%, transparent);
   --mist:  #FBF8F1;
   --range: #55524A;
+  --shan-far:  #A9BCBB;   /* 远山淡青 */
+  --shan-mid:  #7E948F;
+  --shan-near: #3F4B47;   /* 近石焦墨 */
+  --ochre:     #C29A62;   /* 赭石 */
 
   --cinnabar:  #A8322A;
   --on-cinnabar: #FFF6F1;
@@ -709,4 +717,11 @@ a { color: inherit; }
 @media (prefers-reduced-motion: reduce) {
   .rise { opacity: 1; transform: none; }
   *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
+
+/* ------------------------------------------------ 首屏山水:整幅画铺在屏幕下半 */
+.hero:has(.range--scape) { min-height: 100svh; padding-bottom: clamp(260px, 38vh, 420px); }
+.range--scape { width: 100%; min-width: 1100px; height: clamp(300px, 50vh, 540px); }
+.range--scape::after {
+  background: linear-gradient(to top, var(--ground) 0%, transparent 14%);
 }

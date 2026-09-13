@@ -39,12 +39,12 @@ window.LF_I18N = {
   "zh": "能自己挑吗?"
  },
  "ask.note": {
-  "en": "Answered by AI using what the farmer told it. Opens in a new tab.",
-  "es": "Responde una IA con lo que le contó el agricultor. Se abre en una pestaña nueva.",
-  "ja": "農家から聞いた内容をもとに AI が答えます。新しいタブで開きます。",
-  "ko": "농부가 알려준 내용을 바탕으로 AI가 답합니다. 새 탭에서 열립니다.",
-  "vi": "AI trả lời dựa trên những gì nhà vườn cung cấp. Mở trong tab mới.",
-  "zh": "由 AI 回答,内容来自农场主。会在新标签页打开。"
+  "en": "Answers by Leptex · opens in a new tab",
+  "es": "Respuestas de Leptex · se abre en una pestaña nueva",
+  "ja": "回答は Leptex · 新しいタブで開きます",
+  "ko": "답변 제공: Leptex · 새 탭에서 열립니다",
+  "vi": "Hỏi đáp bởi Leptex · mở trong tab mới",
+  "zh": "问答由 Leptex 提供 · 在新标签页打开"
  },
  "ba1.q": {
   "en": "Do you spray?",
@@ -134,30 +134,6 @@ window.LF_I18N = {
   "vi": "Hồng giòn",
   "zh": "柿子"
  },
- "coda.h2": {
-  "en": "Still wondering about something?",
-  "es": "¿Te queda alguna duda?",
-  "ja": "まだ気になることがありますか?",
-  "ko": "아직 궁금한 게 있나요?",
-  "vi": "Còn gì bạn chưa rõ?",
-  "zh": "还有什么想不明白的?"
- },
- "coda.lede": {
-  "en": "Type it the way you would say it out loud. Any language works.",
-  "es": "Escríbelo como lo dirías en voz alta. En cualquier idioma.",
-  "ja": "口に出すとおりに打ってください。どの言語でも大丈夫です。",
-  "ko": "말하듯이 그대로 쓰세요. 어떤 언어든 괜찮습니다.",
-  "vi": "Cứ gõ như bạn nói ra miệng. Ngôn ngữ nào cũng được.",
-  "zh": "怎么说话就怎么打,什么语言都行。"
- },
- "coda.ph": {
-  "en": "e.g. can I still come on Saturday afternoon?",
-  "es": "p. ej. ¿puedo ir el sábado por la tarde?",
-  "ja": "例:土曜の午後でも行けますか?",
-  "ko": "예: 토요일 오후에도 갈 수 있나요?",
-  "vi": "ví dụ: chiều thứ Bảy tôi đến được không?",
-  "zh": "比如:周六下午还能来取吗?"
- },
  "foot.about": {
   "en": "A family farm in Redmond, WA. Everything else, just ask.",
   "es": "Una granja familiar en Redmond, WA. Lo demás, pregúntanos.",
@@ -175,12 +151,12 @@ window.LF_I18N = {
   "zh": "随便问点什么"
  },
  "foot.by": {
-  "en": "Answers by Leptex",
-  "es": "Respuestas de Leptex",
-  "ja": "回答は Leptex",
-  "ko": "답변 제공: Leptex",
-  "vi": "Hỏi đáp bởi Leptex",
-  "zh": "问答由 Leptex 提供"
+  "en": "Powered by Leptex",
+  "es": "Con tecnología de Leptex",
+  "ja": "Powered by Leptex",
+  "ko": "Powered by Leptex",
+  "vi": "Vận hành bởi Leptex",
+  "zh": "由 Leptex 驱动"
  },
  "foot.reach": {
   "en": "Reach us",
@@ -199,20 +175,20 @@ window.LF_I18N = {
   "zh": "© 2026 幸运农场 · 华盛顿州 Redmond"
  },
  "grow.h2": {
-  "en": "Six things. Ask about any of them.",
-  "es": "Seis cosas. Pregunta por cualquiera.",
-  "ja": "六つ。どれでも聞いてください。",
-  "ko": "여섯 가지. 무엇이든 물어보세요.",
-  "vi": "Sáu thứ. Hỏi về thứ nào cũng được.",
-  "zh": "六样。哪一样都可以问。"
+  "en": "Tap one to order",
+  "es": "Toca uno para pedir",
+  "ja": "選んで、そのまま注文",
+  "ko": "하나를 눌러 주문하세요",
+  "vi": "Chạm để đặt mua",
+  "zh": "点一样,就能下单"
  },
  "grow.kicker": {
-  "en": "What we grow",
-  "es": "Lo que cultivamos",
-  "ja": "育てているもの",
-  "ko": "기르는 것",
-  "vi": "Chúng tôi trồng",
-  "zh": "我们种的"
+  "en": "From our fields",
+  "es": "De nuestros campos",
+  "ja": "畑から",
+  "ko": "우리 밭에서",
+  "vi": "Từ vườn nhà",
+  "zh": "地里的"
  },
  "hail.label": {
   "en": "Ask the farm",
@@ -446,6 +422,54 @@ window.LF_I18N = {
   "vi": "Không có ở đây — Lucky Farm",
   "zh": "这页没有了 — 幸运农场"
  },
+ "q.buy.apple": {
+  "en": "I'd like to buy some red-fleshed apples. What do you have today?",
+  "es": "Quiero comprar manzanas de pulpa roja. ¿Qué tienen hoy?",
+  "ja": "赤肉りんごを買いたいです。今日はありますか?",
+  "ko": "속빨간 사과 사고 싶어요. 오늘 있나요?",
+  "vi": "Tôi muốn mua táo ruột đỏ. Hôm nay có không?",
+  "zh": "我想买点红肉苹果,今天有吗?"
+ },
+ "q.buy.beans": {
+  "en": "I'd like to buy some green beans. What do you have today?",
+  "es": "Quiero comprar judías verdes. ¿Qué tienen hoy?",
+  "ja": "いんげんを買いたいです。今日はありますか?",
+  "ko": "그린빈 사고 싶어요. 오늘 있나요?",
+  "vi": "Tôi muốn mua đậu que. Hôm nay có không?",
+  "zh": "我想买点四季豆,今天有吗?"
+ },
+ "q.buy.blueberry": {
+  "en": "I'd like to buy some blueberries. What do you have today?",
+  "es": "Quiero comprar arándanos. ¿Qué tienen hoy?",
+  "ja": "ブルーベリーを買いたいです。今日はありますか?",
+  "ko": "블루베리 사고 싶어요. 오늘 있나요?",
+  "vi": "Tôi muốn mua việt quất. Hôm nay có không?",
+  "zh": "我想买点蓝莓,今天有吗?"
+ },
+ "q.buy.cherry": {
+  "en": "I'd like to buy some cherries. What do you have today?",
+  "es": "Quiero comprar cerezas. ¿Qué tienen hoy?",
+  "ja": "さくらんぼを買いたいです。今日はありますか?",
+  "ko": "체리 사고 싶어요. 오늘 있나요?",
+  "vi": "Tôi muốn mua cherry. Hôm nay có không?",
+  "zh": "我想买点樱桃,今天有吗?"
+ },
+ "q.buy.hawthorn": {
+  "en": "I'd like to buy some hawthorn. What do you have today?",
+  "es": "Quiero comprar espino. ¿Qué tienen hoy?",
+  "ja": "山査子を買いたいです。今日はありますか?",
+  "ko": "산사 사고 싶어요. 오늘 있나요?",
+  "vi": "Tôi muốn mua sơn tra. Hôm nay có không?",
+  "zh": "我想买点山楂,今天有吗?"
+ },
+ "q.buy.persimmon": {
+  "en": "I'd like to buy some persimmons. What do you have today?",
+  "es": "Quiero comprar caquis. ¿Qué tienen hoy?",
+  "ja": "柿を買いたいです。今日はありますか?",
+  "ko": "감 사고 싶어요. 오늘 있나요?",
+  "vi": "Tôi muốn mua hồng giòn. Hôm nay có không?",
+  "zh": "我想买点柿子,今天有吗?"
+ },
  "q.collect": {
   "en": "Where and when do I collect my order?",
   "es": "¿Dónde y cuándo recojo mi pedido?",
@@ -558,54 +582,6 @@ window.LF_I18N = {
   "vi": "Sơn tra của các bạn mọi người thường làm gì?",
   "zh": "你们的山楂,大家一般怎么吃?"
  },
- "q.ripe.apple": {
-  "en": "How is a red-fleshed apple different from a normal one?",
-  "es": "¿En qué se diferencia una manzana de pulpa roja de una normal?",
-  "ja": "赤肉りんごは普通のりんごとどう違いますか?",
-  "ko": "속빨간 사과는 보통 사과와 어떻게 다른가요?",
-  "vi": "Táo ruột đỏ khác táo thường thế nào?",
-  "zh": "红肉苹果和普通苹果有什么不一样?"
- },
- "q.ripe.beans": {
-  "en": "How should I store green beans to keep them crisp?",
-  "es": "¿Cómo guardo las judías verdes para que sigan crujientes?",
-  "ja": "いんげんはどう保存すれば歯ごたえが残りますか?",
-  "ko": "그린빈은 어떻게 보관해야 아삭한가요?",
-  "vi": "Bảo quản đậu que thế nào để còn giòn?",
-  "zh": "四季豆怎么存才脆?"
- },
- "q.ripe.blueberry": {
-  "en": "Are the blueberries ready to pick right now?",
-  "es": "¿Los arándanos ya están para recoger?",
-  "ja": "ブルーベリーは今もぎ頃ですか?",
-  "ko": "지금 블루베리를 딸 수 있나요?",
-  "vi": "Việt quất bây giờ hái được chưa?",
-  "zh": "蓝莓现在能摘了吗?"
- },
- "q.ripe.cherry": {
-  "en": "Are the cherries ready to pick right now?",
-  "es": "¿Las cerezas ya están para recoger?",
-  "ja": "さくらんぼは今もぎ頃ですか?",
-  "ko": "지금 체리를 딸 수 있나요?",
-  "vi": "Cherry bây giờ hái được chưa?",
-  "zh": "樱桃现在能摘了吗?"
- },
- "q.ripe.hawthorn": {
-  "en": "Are the hawthorns ready to pick right now?",
-  "es": "¿El espino ya está para recoger?",
-  "ja": "山査子は今もぎ頃ですか?",
-  "ko": "지금 산사를 딸 수 있나요?",
-  "vi": "Sơn tra bây giờ hái được chưa?",
-  "zh": "山楂现在能摘了吗?"
- },
- "q.ripe.persimmon": {
-  "en": "Are the persimmons sweet yet, or still astringent?",
-  "es": "¿Los caquis ya están dulces o todavía astringentes?",
-  "ja": "柿はもう甘いですか、まだ渋いですか?",
-  "ko": "감이 벌써 달아졌나요, 아직 떫은가요?",
-  "vi": "Hồng đã ngọt chưa hay còn chát?",
-  "zh": "柿子甜了吗,还是还涩?"
- },
  "q.spray": {
   "en": "Do you spray your crops with anything at all?",
   "es": "¿Rocían los cultivos con algo?",
@@ -622,14 +598,6 @@ window.LF_I18N = {
   "vi": "Hôm nay có gì đã chín và sẵn sàng?",
   "zh": "今天有什么熟了、可以拿的?"
  },
- "ui.ask1": {
-  "en": "Ask",
-  "es": "Preguntar",
-  "ja": "聞く",
-  "ko": "물어보기",
-  "vi": "Hỏi",
-  "zh": "问一句"
- },
  "ui.askph": {
   "en": "Ask Lucky Farm anything",
   "es": "Pregúntale a Lucky Farm",
@@ -637,6 +605,14 @@ window.LF_I18N = {
   "ko": "Lucky Farm에 물어보기",
   "vi": "Hỏi Lucky Farm",
   "zh": "问问幸运农场"
+ },
+ "ui.buy": {
+  "en": "Order",
+  "es": "Pedir",
+  "ja": "注文",
+  "ko": "주문",
+  "vi": "Đặt mua",
+  "zh": "下单"
  },
  "ui.go": {
   "en": "Ask",
@@ -677,14 +653,6 @@ window.LF_I18N = {
   "ko": "밝게 / 어둡게",
   "vi": "Sáng hoặc tối",
   "zh": "明暗切换"
- },
- "why.note": {
-  "en": "You will not find prices, an address or opening hours on this page. Those change week to week, and a page that is out of date is worse than no page at all — so every one of them is answered in the chat instead, where the answer matches the day you are asking.",
-  "es": "En esta página no encontrarás precios, dirección ni horarios. Eso cambia semana a semana, y una página desactualizada es peor que ninguna: por eso todo se responde en el chat, donde la respuesta coincide con el día en que preguntas.",
-  "ja": "このページに価格も住所も営業時間もありません。どれも週ごとに変わり、古いページは無いより悪いからです。ですから全部チャットでお答えします。聞いてくださったその日に合った答えで。",
-  "ko": "이 페이지에는 가격도, 주소도, 영업시간도 없습니다. 그런 것은 주마다 바뀌고, 낡은 페이지는 없느니만 못합니다. 그래서 전부 대화에서 답해 드립니다. 물으시는 그날에 맞는 답으로요.",
-  "vi": "Trên trang này bạn sẽ không thấy giá, địa chỉ hay giờ mở cửa. Những thứ đó đổi theo từng tuần, và một trang lỗi thời còn tệ hơn là không có — nên tất cả được trả lời trong phần trò chuyện, đúng với ngày bạn hỏi.",
-  "zh": "这一页上找不到价格、地址和营业时间。这些东西一周一变,一个过期的网页比没有网页更糟 —— 所以它们全都在对话里回答,答案跟着你问的那一天走。"
  }
 }
 };
