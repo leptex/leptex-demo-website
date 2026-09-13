@@ -720,8 +720,8 @@ a { color: inherit; }
 }
 
 /* ------------------------------------------------ 首屏山水:整幅画铺在屏幕下半 */
-.hero:has(.range--scape) { min-height: 100svh; padding-bottom: clamp(260px, 38vh, 420px); }
-.range--scape { width: 100%; min-width: 1100px; height: clamp(300px, 50vh, 540px); }
+.hero:has(.range--scape) { min-height: 100svh; padding-bottom: clamp(200px, 30vh, 340px); }
+.range--scape { top: 0; bottom: 0; height: auto; width: 100%; min-width: 1100px; }
 .range--scape::after {
   background: linear-gradient(to top, var(--ground) 0%, transparent 14%);
 }
