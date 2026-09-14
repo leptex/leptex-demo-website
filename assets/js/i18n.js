@@ -7,12 +7,12 @@ window.LF_I18N = {
   langs: [{"code": "en", "name": "English", "tag": "EN"}, {"code": "zh", "name": "简体中文", "tag": "ZH"}, {"code": "es", "name": "Español", "tag": "ES"}, {"code": "ko", "name": "한국어", "tag": "KO"}, {"code": "vi", "name": "Tiếng Việt", "tag": "VI"}, {"code": "ja", "name": "日本語", "tag": "JA"}],
   dict: {
  "ask.note": {
-  "en": "Answers by Leptex · opens in a new tab",
-  "es": "Respuestas de Leptex · se abre en una pestaña nueva",
-  "ja": "回答は Leptex · 新しいタブで開きます",
-  "ko": "답변 제공: Leptex · 새 탭에서 열립니다",
-  "vi": "Hỏi đáp bởi Leptex · mở trong tab mới",
-  "zh": "问答由 Leptex 提供 · 在新标签页打开"
+  "en": "Answered by Leptex AI · opens in a new tab",
+  "es": "Responde la IA de Leptex · se abre en una pestaña nueva",
+  "ja": "Leptex の AI が回答します · 新しいタブで開きます",
+  "ko": "Leptex AI가 답변합니다 · 새 탭에서 열립니다",
+  "vi": "AI của Leptex trả lời · mở trong tab mới",
+  "zh": "由 Leptex AI 回答 · 在新标签页打开"
  },
  "brand.tag": {
   "en": "Redmond, WA",
@@ -32,7 +32,7 @@ window.LF_I18N = {
  },
  "c.beans.name": {
   "en": "Green beans",
-  "es": "Judías verdes",
+  "es": "Ejotes",
   "ja": "いんげん",
   "ko": "그린빈",
   "vi": "Đậu que",
@@ -51,13 +51,13 @@ window.LF_I18N = {
   "es": "Cerezas",
   "ja": "さくらんぼ",
   "ko": "체리",
-  "vi": "Cherry",
+  "vi": "Anh đào",
   "zh": "樱桃"
  },
  "c.hawthorn.name": {
   "en": "Hawthorn",
-  "es": "Espino",
-  "ja": "山査子",
+  "es": "Espino chino",
+  "ja": "サンザシ",
   "ko": "산사",
   "vi": "Sơn tra",
   "zh": "山楂"
@@ -67,7 +67,7 @@ window.LF_I18N = {
   "es": "Caquis",
   "ja": "柿",
   "ko": "감",
-  "vi": "Hồng giòn",
+  "vi": "Hồng",
   "zh": "柿子"
  },
  "foot.about": {
@@ -96,8 +96,8 @@ window.LF_I18N = {
  },
  "grow.h2": {
   "en": "Hawthorn now. The rest in season.",
-  "es": "Ahora, espino. Lo demás vuelve en su temporada.",
-  "ja": "今は山査子だけ。ほかは旬にまた。",
+  "es": "Ahora, espino chino. Lo demás vuelve en su temporada.",
+  "ja": "今はサンザシだけ。ほかは旬にまた。",
   "ko": "지금은 산사만. 나머지는 제철에 돌아와요.",
   "vi": "Giờ chỉ có sơn tra. Còn lại đợi đúng mùa.",
   "zh": "现在只卖山楂,其他的应季再来"
@@ -119,9 +119,9 @@ window.LF_I18N = {
   "zh": "问问农场"
  },
  "herald": {
-  "en": "Hawthorn is in · and this year they are big",
-  "es": "Ya hay espino · y este año viene grande",
-  "ja": "山査子が出ました · 今年は大粒です",
+  "en": "Hawthorn is in · big fruit this year",
+  "es": "Ya llegó el espino chino · este año, de fruto grande",
+  "ja": "サンザシが出ました · 今年は大粒です",
   "ko": "산사가 나왔습니다 · 올해는 알이 굵습니다",
   "vi": "Sơn tra đã vào mùa · năm nay quả rất to",
   "zh": "山楂下来了 · 今年个头特别大"
@@ -136,7 +136,7 @@ window.LF_I18N = {
  },
  "home.h1": {
   "en": "What would you like today?",
-  "es": "¿Qué le apetece hoy?",
+  "es": "¿Qué quieres comprar hoy?",
   "ja": "今日は何をお探しですか?",
   "ko": "오늘 무엇을 찾으세요?",
   "vi": "Hôm nay bạn muốn mua gì?",
@@ -144,24 +144,24 @@ window.LF_I18N = {
  },
  "home.ph": {
   "en": "Ask anything about the farm",
-  "es": "Pregunta lo que sea sobre la granja",
+  "es": "Pregunta lo que quieras sobre la granja",
   "ja": "農園のこと、何でもどうぞ",
   "ko": "농장에 대해 무엇이든 물어보세요",
   "vi": "Hỏi bất cứ điều gì về nông trại",
   "zh": "关于农场,问什么都行"
  },
  "home.sub": {
-  "en": "Ask, and a person's answer comes back — today's, in your own language.",
-  "es": "Pregunta y te llega la respuesta de una persona: la de hoy, en tu idioma.",
-  "ja": "聞けば、人の答えが返ってきます。今日の答えを、あなたの言葉で。",
-  "ko": "물어보시면 사람의 답이 돌아옵니다. 오늘의 답을, 당신의 언어로.",
-  "vi": "Hỏi một câu, câu trả lời của người sẽ đến — của hôm nay, bằng ngôn ngữ của bạn.",
-  "zh": "问一句,回来的是人的答案 —— 今天的,用你自己的语言。"
+  "en": "Ask, and get today's answer from the farm, in your own language.",
+  "es": "Pregunta y recibe la respuesta de la granja para hoy, en tu idioma.",
+  "ja": "質問すると、農園の今日の回答をあなたの言語でお届けします。",
+  "ko": "물어보시면 농장의 오늘 답변을 원하는 언어로 받아보실 수 있습니다.",
+  "vi": "Hỏi một câu, nhận câu trả lời hôm nay từ nông trại, bằng ngôn ngữ của bạn.",
+  "zh": "问一句,就能得到农场今天的答复,用你自己的语言。"
  },
  "l.hw.order": {
   "en": "How do I order hawthorn?",
-  "es": "¿Cómo pido espino?",
-  "ja": "山査子はどう注文するの?",
+  "es": "¿Cómo pido espino chino?",
+  "ja": "サンザシはどう注文するの?",
   "ko": "산사 어떻게 주문하나요?",
   "vi": "Đặt sơn tra thế nào?",
   "zh": "山楂怎么下单?"
@@ -176,8 +176,8 @@ window.LF_I18N = {
  },
  "l.hw.price": {
   "en": "How much is hawthorn?",
-  "es": "¿Cuánto cuesta el espino?",
-  "ja": "山査子はいくら?",
+  "es": "¿Cuánto cuesta el espino chino?",
+  "ja": "サンザシはいくら?",
   "ko": "산사 얼마예요?",
   "vi": "Sơn tra giá bao nhiêu?",
   "zh": "山楂多少钱?"
@@ -209,8 +209,8 @@ window.LF_I18N = {
  "m.home.title": {
   "en": "Lucky Farm 幸运农场 — family fruit farm in Redmond, WA",
   "es": "Lucky Farm 幸运农场 — granja frutal familiar en Redmond, WA",
-  "ja": "Lucky Farm 幸运農場 — ワシントン州レドモンドの家族果樹園",
-  "ko": "Lucky Farm 幸运농장 — 워싱턴주 레드먼드의 가족 과수원",
+  "ja": "Lucky Farm — ワシントン州レドモンドの家族果樹園",
+  "ko": "Lucky Farm — 워싱턴주 레드먼드의 가족 과수원",
   "vi": "Lucky Farm — nông trại trái cây gia đình ở Redmond, WA",
   "zh": "幸运农场 Lucky Farm — 华盛顿州 Redmond 的家庭果园"
  },
@@ -255,12 +255,12 @@ window.LF_I18N = {
   "zh": "你本来想找什么?"
  },
  "nf.sub": {
-  "en": "It may never have been. Either way, ask — that is where the answers were anyway.",
-  "es": "Puede que nunca lo estuviera. En cualquier caso, pregunta: ahí es donde estaban las respuestas.",
-  "ja": "もともと無かったのかもしれません。どちらにせよ、聞いてください。答えはもとからそちらにあります。",
-  "ko": "애초에 없었을 수도 있습니다. 어느 쪽이든 물어보세요. 답은 원래 거기에 있습니다.",
-  "vi": "Có thể nó chưa từng tồn tại. Dù sao thì cứ hỏi — câu trả lời vốn nằm ở đó.",
-  "zh": "也可能从来就没有过。不管怎样,问一句 —— 答案本来就在那边。"
+  "en": "Maybe it never existed. Either way, just ask — the answers are in the chat.",
+  "es": "Quizá nunca existió. De todos modos, pregunta: las respuestas están en el chat.",
+  "ja": "もともと無かったのかもしれません。いずれにしても、聞いてください。答えはチャットにあります。",
+  "ko": "처음부터 없었을 수도 있습니다. 어쨌든 물어보세요. 답은 채팅에 있습니다.",
+  "vi": "Có thể trang này chưa từng tồn tại. Dù sao, cứ hỏi — câu trả lời nằm trong khung chat.",
+  "zh": "也可能从来就没有过。不管怎样,问一句就好 —— 答案都在对话里。"
  },
  "nf.title": {
   "en": "Not here — Lucky Farm",
@@ -272,40 +272,40 @@ window.LF_I18N = {
  },
  "q.buy.hawthorn": {
   "en": "I'd like to buy some hawthorn. What do you have today?",
-  "es": "Quiero comprar espino. ¿Qué tienen hoy?",
-  "ja": "山査子を買いたいです。今日はありますか?",
+  "es": "Quiero comprar espino chino. ¿Qué tienen hoy?",
+  "ja": "サンザシを買いたいです。今日はありますか?",
   "ko": "산사 사고 싶어요. 오늘 있나요?",
   "vi": "Tôi muốn mua sơn tra. Hôm nay có không?",
   "zh": "我想买点山楂,今天有吗?"
  },
  "q.herald": {
   "en": "Do you still have hawthorn, and how big are they this year?",
-  "es": "¿Todavía tienen espino? ¿Qué tamaño tiene este año?",
-  "ja": "山査子はまだありますか?今年はどのくらいの大きさですか?",
+  "es": "¿Todavía tienen espino chino? ¿Qué tamaño tiene este año?",
+  "ja": "サンザシはまだありますか?今年はどのくらいの大きさですか?",
   "ko": "산사 아직 있나요? 올해는 얼마나 굵은가요?",
   "vi": "Còn sơn tra không? Năm nay quả to cỡ nào?",
   "zh": "山楂现在还有吗?今年个头有多大?"
  },
  "q.hw.order": {
   "en": "I'd like to order fresh hawthorn. How do I do it?",
-  "es": "Quiero pedir espino fresco. ¿Cómo lo hago?",
-  "ja": "生の山査子を注文したいです。どうすればいいですか?",
+  "es": "Quiero pedir espino chino fresco. ¿Cómo lo hago?",
+  "ja": "生のサンザシを注文したいです。どうすればいいですか?",
   "ko": "신선한 산사를 주문하고 싶어요. 어떻게 하나요?",
   "vi": "Tôi muốn đặt sơn tra tươi. Làm thế nào?",
   "zh": "我想买新鲜山楂,怎么下单?"
  },
  "q.hw.picked": {
   "en": "When was the hawthorn picked? How fresh is it?",
-  "es": "¿Cuándo se recogió el espino? ¿Qué tan fresco está?",
-  "ja": "山査子はいつ収穫しましたか?どのくらい新鮮ですか?",
+  "es": "¿Cuándo se recogió el espino chino? ¿Qué tan fresco está?",
+  "ja": "サンザシはいつ収穫しましたか?どのくらい新鮮ですか?",
   "ko": "산사는 언제 땄나요? 얼마나 신선한가요?",
   "vi": "Sơn tra hái khi nào? Tươi cỡ nào?",
   "zh": "山楂是哪天摘的?有多新鲜?"
  },
  "q.hw.price": {
   "en": "How much is fresh hawthorn this week?",
-  "es": "¿Cuánto cuesta el espino fresco esta semana?",
-  "ja": "今週の生の山査子はいくらですか?",
+  "es": "¿Cuánto cuesta el espino chino fresco esta semana?",
+  "ja": "今週の生のサンザシはいくらですか?",
   "ko": "이번 주 신선한 산사 가격이 어떻게 되나요?",
   "vi": "Sơn tra tươi tuần này giá bao nhiêu?",
   "zh": "新鲜山楂这周怎么卖?"
@@ -371,8 +371,8 @@ window.LF_I18N = {
   "es": "Fuera de temporada",
   "ja": "季節外",
   "ko": "제철 아님",
-  "vi": "Chưa vào mùa",
-  "zh": "未到季"
+  "vi": "Ngoài mùa",
+  "zh": "非当季"
  },
  "ui.send": {
   "en": "Send",

@@ -52,18 +52,18 @@
 :root[data-theme="light"] {
   color-scheme: light;
 
-  --ground:        #F4F0E6;   /* 宣纸 */
-  --ground-raised: #FBF8F1;
-  --ground-sunk:   #EBE5D6;
+  --ground:        #FFFFFF;   /* 纯白:整页一个底色,不再分段 */
+  --ground-raised: #FFFFFF;
+  --ground-sunk:   #FFFFFF;
 
   --ink:    #191815;
   --ink-2:  #46443D;
   --ink-3:  #6F6B5F;
   --ink-4:  #6B6557;   /* WCAG AA 4.5:1 */
-  --ink-5:  #D6D0BE;
+  --ink-5:  #E2E4EA;
 
   --line:  color-mix(in srgb, var(--ink-4) 52%, transparent);
-  --mist:  #F5F8FC;
+  --mist:  #FFFFFF;
   --range: #55524A;
   --shan-far:  #BFD2EE;   /* 远山:浅蓝 */
   --shan-mid:  #8EABD8;
@@ -75,8 +75,8 @@
   --cinnabar:  #5840D0;
   --on-cinnabar: #FFFFFF;
 
-  --plate:      #F0EBDE;
-  --plate-edge: #DCD5C3;
+  --plate:      #F7F8FB;
+  --plate-edge: #E6E8EF;
 }
 
 /* ------------------------------------------------------------- 3. 基底 */
@@ -106,7 +106,7 @@ body::before {
   mix-blend-mode: screen;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='260' height='260' filter='url(%23n)' opacity='0.3'/%3E%3C/svg%3E");
 }
-:root[data-theme="light"] body::before { mix-blend-mode: multiply; opacity: .5; }
+:root[data-theme="light"] body::before { display: none; }   /* 纯白底不要纸纹 */
 
 img, svg { max-width: 100%; display: block; }
 
@@ -482,7 +482,7 @@ a { color: inherit; }
 
 /* ------------------------------------------------------------ 9. 章节 */
 .section { padding-block: var(--bay); position: relative; z-index: 1; }
-.section--sunk { background: color-mix(in srgb, var(--ground-sunk) 70%, transparent); }
+.section--sunk { background: transparent; }   /* 与首屏同一底色,避免色块断层 */
 .section--tight { padding-block: 0; }
 
 .section__head { max-width: 640px; margin-bottom: clamp(38px, 5.5vw, 62px); }

@@ -240,7 +240,7 @@ robots.txt  sitemap.xml  CNAME
 ```
 
 Colour passes WCAG AA in both themes. The two things that did not, and now do: the
-muted ink that carries the *"Answers by Leptex"* line, and the text on the
+muted ink that carries the *"Answered by Leptex AI"* disclosure, and the text on the
 coral button in dark mode — no single accent can be both bright enough to read as
 text on near-black and dark enough to sit under paper-white, so the button prints
 dark ink on coral instead. The brand mark stays paper-white; logotypes are exempt.
