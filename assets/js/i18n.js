@@ -6,38 +6,6 @@
 window.LF_I18N = {
   langs: [{"code": "en", "name": "English", "tag": "EN"}, {"code": "zh", "name": "简体中文", "tag": "ZH"}, {"code": "es", "name": "Español", "tag": "ES"}, {"code": "ko", "name": "한국어", "tag": "KO"}, {"code": "vi", "name": "Tiếng Việt", "tag": "VI"}, {"code": "ja", "name": "日本語", "tag": "JA"}],
   dict: {
- "a1.full": {
-  "en": "Do you deliver or ship anywhere?",
-  "es": "¿Entregan o envían a algún sitio?",
-  "ja": "配達や発送はしていますか?",
-  "ko": "배달이나 택배가 되나요?",
-  "vi": "Các bạn có giao hàng hay gửi đi đâu không?",
-  "zh": "你们送货或者发快递吗?"
- },
- "a1.q": {
-  "en": "Do you deliver?",
-  "es": "¿Hacen entregas?",
-  "ja": "配達はしますか?",
-  "ko": "배달하나요?",
-  "vi": "Có giao hàng không?",
-  "zh": "你们送货吗?"
- },
- "a2.full": {
-  "en": "Can I pick my own fruit, or do you bag it for me?",
-  "es": "¿Puedo coger la fruta yo mismo o me la preparan?",
-  "ja": "自分で摘めますか、それとも詰めてもらえますか?",
-  "ko": "제가 직접 딸 수 있나요, 아니면 담아주시나요?",
-  "vi": "Tôi tự hái được không, hay các bạn đóng túi sẵn?",
-  "zh": "我可以自己摘吗,还是你们帮我装好?"
- },
- "a2.q": {
-  "en": "Can I pick my own?",
-  "es": "¿Puedo cogerlas yo?",
-  "ja": "自分で摘めますか?",
-  "ko": "직접 딸 수 있나요?",
-  "vi": "Tôi tự hái được không?",
-  "zh": "能自己挑吗?"
- },
  "ask.note": {
   "en": "Answers by Leptex · opens in a new tab",
   "es": "Respuestas de Leptex · se abre en una pestaña nueva",
@@ -45,38 +13,6 @@ window.LF_I18N = {
   "ko": "답변 제공: Leptex · 새 탭에서 열립니다",
   "vi": "Hỏi đáp bởi Leptex · mở trong tab mới",
   "zh": "问答由 Leptex 提供 · 在新标签页打开"
- },
- "ba1.q": {
-  "en": "Do you spray?",
-  "es": "¿Rocían?",
-  "ja": "農薬は使いますか?",
-  "ko": "약 치세요?",
-  "vi": "Có phun thuốc không?",
-  "zh": "你们打药吗?"
- },
- "ba2.q": {
-  "en": "Can I bring kids?",
-  "es": "¿Puedo traer niños?",
-  "ja": "子ども連れでも?",
-  "ko": "아이를 데려가도 되나요?",
-  "vi": "Dẫn trẻ theo được không?",
-  "zh": "能带孩子来吗?"
- },
- "ba3.full": {
-  "en": "Can I place a bulk order for a family gathering?",
-  "es": "¿Puedo hacer un pedido grande para una reunión familiar?",
-  "ja": "家族の集まり用にまとめて注文できますか?",
-  "ko": "가족 모임용으로 대량 주문할 수 있나요?",
-  "vi": "Tôi đặt số lượng lớn cho một buổi họp mặt gia đình được không?",
-  "zh": "家里聚会,可以大量订吗?"
- },
- "ba3.q": {
-  "en": "Can I order in bulk?",
-  "es": "¿Puedo pedir al por mayor?",
-  "ja": "まとめ買いできますか?",
-  "ko": "대량 주문 되나요?",
-  "vi": "Đặt số lượng lớn được không?",
-  "zh": "能大量订吗?"
  },
  "brand.tag": {
   "en": "Redmond, WA",
@@ -175,12 +111,12 @@ window.LF_I18N = {
   "zh": "© 2026 幸运农场 · 华盛顿州 Redmond"
  },
  "grow.h2": {
-  "en": "Tap one to order",
-  "es": "Toca uno para pedir",
-  "ja": "選んで、そのまま注文",
-  "ko": "하나를 눌러 주문하세요",
-  "vi": "Chạm để đặt mua",
-  "zh": "点一样,就能下单"
+  "en": "Hawthorn now. The rest in season.",
+  "es": "Ahora, espino. Lo demás vuelve en su temporada.",
+  "ja": "今は山査子だけ。ほかは旬にまた。",
+  "ko": "지금은 산사만. 나머지는 제철에 돌아와요.",
+  "vi": "Giờ chỉ có sơn tra. Còn lại đợi đúng mùa.",
+  "zh": "现在只卖山楂,其他的应季再来"
  },
  "grow.kicker": {
   "en": "From our fields",
@@ -238,69 +174,69 @@ window.LF_I18N = {
   "vi": "Hỏi một câu, câu trả lời của người sẽ đến — của hôm nay, bằng ngôn ngữ của bạn.",
   "zh": "问一句,回来的是人的答案 —— 今天的,用你自己的语言。"
  },
- "l.collect": {
-  "en": "Where do I collect?",
-  "es": "¿Dónde lo recojo?",
-  "ja": "受け取りはどこ?",
-  "ko": "어디서 받나요?",
-  "vi": "Nhận ở đâu?",
-  "zh": "去哪儿取?"
+ "hw.h2": {
+  "en": "Ask about this year's hawthorn",
+  "es": "Pregunta por el espino de este año",
+  "ja": "今年の山査子について聞いてください",
+  "ko": "올해 산사에 대해 물어보세요",
+  "vi": "Hỏi về sơn tra năm nay",
+  "zh": "今年的山楂,问吧"
  },
- "l.cometoday": {
-  "en": "Can I come today?",
-  "es": "¿Puedo ir hoy?",
-  "ja": "今日行ってもいい?",
-  "ko": "오늘 가도 되나요?",
-  "vi": "Hôm nay tôi đến được không?",
-  "zh": "今天能来吗?"
+ "hw.kicker": {
+  "en": "September · Hawthorn season",
+  "es": "Septiembre · Temporada de espino",
+  "ja": "9月 · 山査子の季節",
+  "ko": "9월 · 산사 제철",
+  "vi": "Tháng 9 · Mùa sơn tra",
+  "zh": "九月 · 山楂季"
  },
- "l.days": {
-  "en": "Which days?",
-  "es": "¿Qué días?",
-  "ja": "何曜日に?",
-  "ko": "무슨 요일에?",
-  "vi": "Những ngày nào?",
-  "zh": "这周几能取?"
+ "l.hw.keep": {
+  "en": "How do I store it?",
+  "es": "¿Cómo lo guardo?",
+  "ja": "どう保存するの?",
+  "ko": "어떻게 보관하나요?",
+  "vi": "Bảo quản thế nào?",
+  "zh": "买回去怎么存?"
  },
- "l.friend": {
-  "en": "Can a friend collect?",
-  "es": "¿Puede recogerlo un amigo?",
-  "ja": "代理でも大丈夫?",
-  "ko": "대신 받아도 되나요?",
-  "vi": "Bạn tôi nhận thay được không?",
-  "zh": "能代取吗?"
+ "l.hw.order": {
+  "en": "How do I order hawthorn?",
+  "es": "¿Cómo pido espino?",
+  "ja": "山査子はどう注文するの?",
+  "ko": "산사 어떻게 주문하나요?",
+  "vi": "Đặt sơn tra thế nào?",
+  "zh": "山楂怎么下单?"
  },
- "l.hold": {
-  "en": "Can you hold some for me?",
-  "es": "¿Me pueden apartar algo?",
-  "ja": "取り置きできますか?",
-  "ko": "좀 남겨두실 수 있나요?",
-  "vi": "Giữ lại cho tôi được không?",
-  "zh": "能给我留一些吗?"
+ "l.hw.picked": {
+  "en": "When was it picked?",
+  "es": "¿Cuándo se recogió?",
+  "ja": "いつ収穫したの?",
+  "ko": "언제 땄어요?",
+  "vi": "Hái khi nào?",
+  "zh": "哪天摘的?"
  },
- "l.keep": {
-  "en": "How long will it keep?",
-  "es": "¿Cuánto dura?",
-  "ja": "どのくらいもつ?",
-  "ko": "얼마나 보관되나요?",
-  "vi": "Để được bao lâu?",
-  "zh": "能放多久?"
+ "l.hw.price": {
+  "en": "How much is hawthorn?",
+  "es": "¿Cuánto cuesta el espino?",
+  "ja": "山査子はいくら?",
+  "ko": "산사 얼마예요?",
+  "vi": "Sơn tra giá bao nhiêu?",
+  "zh": "山楂多少钱?"
  },
- "l.left": {
-  "en": "How much is left?",
-  "es": "¿Cuánto queda?",
-  "ja": "あとどれくらい?",
-  "ko": "얼마나 남았나요?",
-  "vi": "Còn bao nhiêu?",
-  "zh": "还剩多少?"
+ "l.hw.spray": {
+  "en": "Is it sprayed?",
+  "es": "¿Lleva pesticidas?",
+  "ja": "農薬は使ってる?",
+  "ko": "농약 쳤나요?",
+  "vi": "Có phun thuốc không?",
+  "zh": "打农药吗?"
  },
- "l.min": {
-  "en": "Is there a minimum?",
-  "es": "¿Hay un mínimo?",
-  "ja": "最低数量はある?",
-  "ko": "최소 주문이 있나요?",
-  "vi": "Có mức tối thiểu không?",
-  "zh": "最少买多少?"
+ "l.hw.taste": {
+  "en": "Sweet or sour? How do I eat it?",
+  "es": "¿Dulce o ácido? ¿Cómo se come?",
+  "ja": "甘い?酸っぱい?食べ方は?",
+  "ko": "단가요, 신가요? 어떻게 먹나요?",
+  "vi": "Chua hay ngọt? Ăn thế nào?",
+  "zh": "酸还是甜?怎么吃?"
  },
  "l.order": {
   "en": "How do I order?",
@@ -310,14 +246,6 @@ window.LF_I18N = {
   "vi": "Đặt hàng thế nào?",
   "zh": "怎么下单?"
  },
- "l.pay": {
-  "en": "How do I pay?",
-  "es": "¿Cómo pago?",
-  "ja": "支払いは?",
-  "ko": "결제는 어떻게 하나요?",
-  "vi": "Trả tiền thế nào?",
-  "zh": "怎么付钱?"
- },
  "l.price": {
   "en": "How much today?",
   "es": "¿Cuánto cuesta hoy?",
@@ -325,14 +253,6 @@ window.LF_I18N = {
   "ko": "오늘 얼마예요?",
   "vi": "Hôm nay bao nhiêu?",
   "zh": "今天多少钱?"
- },
- "l.recipe": {
-  "en": "What do people do with it?",
-  "es": "¿Qué hace la gente con esto?",
-  "ja": "みんなどう食べてる?",
-  "ko": "다들 어떻게 드시나요?",
-  "vi": "Mọi người thường chế biến thế nào?",
-  "zh": "大家都怎么吃?"
  },
  "l.today": {
   "en": "What is ripe today?",
@@ -349,22 +269,6 @@ window.LF_I18N = {
   "ko": "Lucky Farm 幸运농장 — 워싱턴주 레드먼드의 가족 과수원",
   "vi": "Lucky Farm — nông trại trái cây gia đình ở Redmond, WA",
   "zh": "幸运农场 Lucky Farm — 华盛顿州 Redmond 的家庭果园"
- },
- "menu.h2": {
-  "en": "Pick a question, or type your own",
-  "es": "Elige una pregunta o escribe la tuya",
-  "ja": "質問を選ぶか、自分で打つか",
-  "ko": "질문을 고르거나, 직접 적어보세요",
-  "vi": "Chọn một câu, hoặc tự gõ câu của bạn",
-  "zh": "挑一个,或者自己打一句"
- },
- "menu.kicker": {
-  "en": "What people ask",
-  "es": "Lo que nos preguntan",
-  "ja": "よく聞かれること",
-  "ko": "사람들이 묻는 것",
-  "vi": "Người ta hỏi gì",
-  "zh": "大家都问什么"
  },
  "nav.ask": {
   "en": "Ask us",
@@ -422,38 +326,6 @@ window.LF_I18N = {
   "vi": "Không có ở đây — Lucky Farm",
   "zh": "这页没有了 — 幸运农场"
  },
- "q.buy.apple": {
-  "en": "I'd like to buy some red-fleshed apples. What do you have today?",
-  "es": "Quiero comprar manzanas de pulpa roja. ¿Qué tienen hoy?",
-  "ja": "赤肉りんごを買いたいです。今日はありますか?",
-  "ko": "속빨간 사과 사고 싶어요. 오늘 있나요?",
-  "vi": "Tôi muốn mua táo ruột đỏ. Hôm nay có không?",
-  "zh": "我想买点红肉苹果,今天有吗?"
- },
- "q.buy.beans": {
-  "en": "I'd like to buy some green beans. What do you have today?",
-  "es": "Quiero comprar judías verdes. ¿Qué tienen hoy?",
-  "ja": "いんげんを買いたいです。今日はありますか?",
-  "ko": "그린빈 사고 싶어요. 오늘 있나요?",
-  "vi": "Tôi muốn mua đậu que. Hôm nay có không?",
-  "zh": "我想买点四季豆,今天有吗?"
- },
- "q.buy.blueberry": {
-  "en": "I'd like to buy some blueberries. What do you have today?",
-  "es": "Quiero comprar arándanos. ¿Qué tienen hoy?",
-  "ja": "ブルーベリーを買いたいです。今日はありますか?",
-  "ko": "블루베리 사고 싶어요. 오늘 있나요?",
-  "vi": "Tôi muốn mua việt quất. Hôm nay có không?",
-  "zh": "我想买点蓝莓,今天有吗?"
- },
- "q.buy.cherry": {
-  "en": "I'd like to buy some cherries. What do you have today?",
-  "es": "Quiero comprar cerezas. ¿Qué tienen hoy?",
-  "ja": "さくらんぼを買いたいです。今日はありますか?",
-  "ko": "체리 사고 싶어요. 오늘 있나요?",
-  "vi": "Tôi muốn mua cherry. Hôm nay có không?",
-  "zh": "我想买点樱桃,今天有吗?"
- },
  "q.buy.hawthorn": {
   "en": "I'd like to buy some hawthorn. What do you have today?",
   "es": "Quiero comprar espino. ¿Qué tienen hoy?",
@@ -461,46 +333,6 @@ window.LF_I18N = {
   "ko": "산사 사고 싶어요. 오늘 있나요?",
   "vi": "Tôi muốn mua sơn tra. Hôm nay có không?",
   "zh": "我想买点山楂,今天有吗?"
- },
- "q.buy.persimmon": {
-  "en": "I'd like to buy some persimmons. What do you have today?",
-  "es": "Quiero comprar caquis. ¿Qué tienen hoy?",
-  "ja": "柿を買いたいです。今日はありますか?",
-  "ko": "감 사고 싶어요. 오늘 있나요?",
-  "vi": "Tôi muốn mua hồng giòn. Hôm nay có không?",
-  "zh": "我想买点柿子,今天有吗?"
- },
- "q.collect": {
-  "en": "Where and when do I collect my order?",
-  "es": "¿Dónde y cuándo recojo mi pedido?",
-  "ja": "注文はどこで、いつ受け取れますか?",
-  "ko": "어디서, 언제 주문한 것을 받나요?",
-  "vi": "Tôi nhận đơn ở đâu và khi nào?",
-  "zh": "我去哪儿、什么时候取?"
- },
- "q.cometoday": {
-  "en": "Can I come and pick something up today?",
-  "es": "¿Puedo pasar hoy a recoger algo?",
-  "ja": "今日、受け取りに行けますか?",
-  "ko": "오늘 가서 뭔가 받아올 수 있나요?",
-  "vi": "Hôm nay tôi ghé lấy được không?",
-  "zh": "我今天能过去拿点东西吗?"
- },
- "q.days": {
-  "en": "Which days can I pick up this week?",
-  "es": "¿Qué días puedo recoger esta semana?",
-  "ja": "今週はどの日に受け取れますか?",
-  "ko": "이번 주에 어느 요일에 받을 수 있나요?",
-  "vi": "Tuần này nhận được vào những ngày nào?",
-  "zh": "这周哪几天可以来取?"
- },
- "q.friend": {
-  "en": "Can a friend pick up my order for me?",
-  "es": "¿Puede un amigo recoger mi pedido?",
-  "ja": "友人が代わりに受け取れますか?",
-  "ko": "친구가 대신 받아가도 되나요?",
-  "vi": "Bạn tôi nhận đơn thay tôi được không?",
-  "zh": "可以让朋友替我来取吗?"
  },
  "q.herald": {
   "en": "Do you still have hawthorn, and how big are they this year?",
@@ -510,45 +342,53 @@ window.LF_I18N = {
   "vi": "Còn sơn tra không? Năm nay quả to cỡ nào?",
   "zh": "山楂现在还有吗?今年个头有多大?"
  },
- "q.hold": {
-  "en": "Can you hold some for me until I get there?",
-  "es": "¿Pueden apartarme algo hasta que llegue?",
-  "ja": "取りに行くまで取り置きしてもらえますか?",
-  "ko": "제가 갈 때까지 좀 남겨두실 수 있나요?",
-  "vi": "Giữ lại giúp tôi tới khi tôi đến được không?",
-  "zh": "能不能给我留一些,等我过去拿?"
+ "q.hw.keep": {
+  "en": "How long does fresh hawthorn keep, and how should I store it?",
+  "es": "¿Cuánto dura el espino fresco y cómo lo guardo?",
+  "ja": "生の山査子はどのくらい持ちますか?どう保存すればいいですか?",
+  "ko": "신선한 산사는 얼마나 가고, 어떻게 보관하나요?",
+  "vi": "Sơn tra tươi để được bao lâu, bảo quản thế nào?",
+  "zh": "新鲜山楂能放多久?怎么保存?"
  },
- "q.keep": {
-  "en": "How long will it keep once I get it home?",
-  "es": "¿Cuánto dura una vez que llego a casa?",
-  "ja": "家に持ち帰ってからどのくらいもちますか?",
-  "ko": "집에 가져가면 얼마나 보관할 수 있나요?",
-  "vi": "Mang về nhà thì để được bao lâu?",
-  "zh": "拿回家之后能放多久?"
+ "q.hw.order": {
+  "en": "I'd like to order fresh hawthorn. How do I do it?",
+  "es": "Quiero pedir espino fresco. ¿Cómo lo hago?",
+  "ja": "生の山査子を注文したいです。どうすればいいですか?",
+  "ko": "신선한 산사를 주문하고 싶어요. 어떻게 하나요?",
+  "vi": "Tôi muốn đặt sơn tra tươi. Làm thế nào?",
+  "zh": "我想买新鲜山楂,怎么下单?"
  },
- "q.kids": {
-  "en": "Can I bring my children to the farm?",
-  "es": "¿Puedo llevar a mis hijos a la granja?",
-  "ja": "子どもを農園に連れて行けますか?",
-  "ko": "아이들을 농장에 데려가도 되나요?",
-  "vi": "Tôi dẫn con tới vườn được không?",
-  "zh": "可以带孩子来农场吗?"
+ "q.hw.picked": {
+  "en": "When was the hawthorn picked? How fresh is it?",
+  "es": "¿Cuándo se recogió el espino? ¿Qué tan fresco está?",
+  "ja": "山査子はいつ収穫しましたか?どのくらい新鮮ですか?",
+  "ko": "산사는 언제 땄나요? 얼마나 신선한가요?",
+  "vi": "Sơn tra hái khi nào? Tươi cỡ nào?",
+  "zh": "山楂是哪天摘的?有多新鲜?"
  },
- "q.left": {
-  "en": "How much do you have left right now?",
-  "es": "¿Cuánto les queda ahora mismo?",
-  "ja": "今、どれくらい残っていますか?",
-  "ko": "지금 얼마나 남아 있나요?",
-  "vi": "Ngay bây giờ còn lại bao nhiêu?",
-  "zh": "现在还剩多少?"
+ "q.hw.price": {
+  "en": "How much is fresh hawthorn this week?",
+  "es": "¿Cuánto cuesta el espino fresco esta semana?",
+  "ja": "今週の生の山査子はいくらですか?",
+  "ko": "이번 주 신선한 산사 가격이 어떻게 되나요?",
+  "vi": "Sơn tra tươi tuần này giá bao nhiêu?",
+  "zh": "新鲜山楂这周怎么卖?"
  },
- "q.min": {
-  "en": "Is there a minimum order?",
-  "es": "¿Hay un pedido mínimo?",
-  "ja": "最低注文量はありますか?",
-  "ko": "최소 주문 수량이 있나요?",
-  "vi": "Có số lượng đặt tối thiểu không?",
-  "zh": "有最少起订量吗?"
+ "q.hw.spray": {
+  "en": "Is anything sprayed on the hawthorn trees?",
+  "es": "¿Se fumigan los espinos con algo?",
+  "ja": "山査子の木に農薬は使っていますか?",
+  "ko": "산사나무에 농약을 치나요?",
+  "vi": "Cây sơn tra có phun thuốc gì không?",
+  "zh": "山楂树打过农药吗?"
+ },
+ "q.hw.taste": {
+  "en": "Is this year's hawthorn sweet or sour, and how do people eat it?",
+  "es": "¿El espino de este año es dulce o ácido, y cómo se come?",
+  "ja": "今年の山査子は甘いですか、酸っぱいですか?どうやって食べますか?",
+  "ko": "올해 산사는 단가요 신가요? 보통 어떻게 먹나요?",
+  "vi": "Sơn tra năm nay chua hay ngọt, thường ăn thế nào?",
+  "zh": "今年的山楂酸还是甜?一般怎么吃?"
  },
  "q.order": {
   "en": "How do I place an order with you?",
@@ -558,14 +398,6 @@ window.LF_I18N = {
   "vi": "Tôi đặt hàng với các bạn thế nào?",
   "zh": "我怎么跟你们下单?"
  },
- "q.pay": {
-  "en": "How do I pay, and when?",
-  "es": "¿Cómo y cuándo pago?",
-  "ja": "支払いはどうやって、いつですか?",
-  "ko": "결제는 어떻게, 언제 하나요?",
-  "vi": "Tôi trả tiền bằng cách nào và khi nào?",
-  "zh": "我怎么付钱,什么时候付?"
- },
  "q.price": {
   "en": "What are today's prices?",
   "es": "¿Cuáles son los precios de hoy?",
@@ -573,22 +405,6 @@ window.LF_I18N = {
   "ko": "오늘 가격이 어떻게 되나요?",
   "vi": "Giá hôm nay thế nào?",
   "zh": "今天的价格是多少?"
- },
- "q.recipe": {
-  "en": "What do people usually do with your hawthorn?",
-  "es": "¿Qué suele hacer la gente con su espino?",
-  "ja": "こちらの山査子は、みなさんどう食べますか?",
-  "ko": "여기 산사는 보통 어떻게 드시나요?",
-  "vi": "Sơn tra của các bạn mọi người thường làm gì?",
-  "zh": "你们的山楂,大家一般怎么吃?"
- },
- "q.spray": {
-  "en": "Do you spray your crops with anything at all?",
-  "es": "¿Rocían los cultivos con algo?",
-  "ja": "作物に何か薬を撒いていますか?",
-  "ko": "작물에 무엇이든 약을 치시나요?",
-  "vi": "Các bạn có phun bất cứ thứ gì lên cây không?",
-  "zh": "你们的地到底打不打药?"
  },
  "q.today": {
   "en": "What is ripe and ready today?",
@@ -622,6 +438,14 @@ window.LF_I18N = {
   "vi": "Hỏi",
   "zh": "去问"
  },
+ "ui.in": {
+  "en": "In season",
+  "es": "De temporada",
+  "ja": "旬",
+  "ko": "제철",
+  "vi": "Đang mùa",
+  "zh": "正当季"
+ },
  "ui.lang": {
   "en": "Language",
   "es": "Idioma",
@@ -629,6 +453,14 @@ window.LF_I18N = {
   "ko": "언어",
   "vi": "Ngôn ngữ",
   "zh": "语言"
+ },
+ "ui.off": {
+  "en": "Out of season",
+  "es": "Fuera de temporada",
+  "ja": "季節外",
+  "ko": "제철 아님",
+  "vi": "Chưa vào mùa",
+  "zh": "未到季"
  },
  "ui.send": {
   "en": "Send",

@@ -744,3 +744,19 @@ a { color: inherit; }
 .hero:has(.range--scape) .moondisc {
   background: radial-gradient(circle at 40% 40%, color-mix(in srgb, var(--glow-b) 30%, transparent), color-mix(in srgb, var(--glow-a) 14%, transparent) 70%, transparent 72%);
 }
+
+/* 应季:只有山楂在卖,其他作物标「未到季」,不是入口 */
+.plate { position: relative; }
+.crop--in { border-color: color-mix(in srgb, var(--cinnabar) 55%, var(--line)); }
+.crop__badge {
+  position: absolute; top: 12px; left: 12px;
+  padding: 4px 10px; border-radius: 999px;
+  background: var(--flow); color: var(--on-cinnabar);
+  font-size: 11.5px; letter-spacing: .1em; text-transform: uppercase;
+}
+.crop--in .crop__ask { opacity: 1; }
+.crop--off:hover { transform: none; border-color: var(--line); }
+.crop--off .plate img { filter: grayscale(.9); opacity: .55; }
+.crop--off .crop__body { flex-direction: row; align-items: baseline; justify-content: space-between; gap: 12px; }
+.crop--off .crop__name { color: var(--ink-3); }
+.crop__off { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); white-space: nowrap; }
