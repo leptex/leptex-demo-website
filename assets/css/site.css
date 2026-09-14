@@ -18,11 +18,13 @@
   --ink-5:  #3A3830;
 
   --line:  color-mix(in srgb, var(--ink-4) 42%, transparent);
-  --mist:  #2A2F38;           /* 山间的雾,永远比地亮 */
+  --mist:  #1C1D36;           /* 山间的雾,永远比地亮 */
   --range: #9AA0AC;           /* 月下的山 */
-  --shan-far:  #3E4A52;
-  --shan-mid:  #56646A;
-  --shan-near: #7E8A88;
+  --shan-far:  #2C2F63;
+  --shan-mid:  #3E3F86;
+  --shan-near: #7C7FD8;
+  --glow-a:    #4F6BFF;   /* Leptex 蓝 */
+  --glow-b:    #9B6BFF;   /* Leptex 紫 */
   --ochre:     #8A6E4A;
 
   --cinnabar:  #DD6650;       /* 朱砂,夜里要发光 —— 当文字用 */
@@ -60,11 +62,13 @@
   --ink-5:  #D6D0BE;
 
   --line:  color-mix(in srgb, var(--ink-4) 52%, transparent);
-  --mist:  #FBF8F1;
+  --mist:  #F7F5FC;
   --range: #55524A;
-  --shan-far:  #A9BCBB;   /* 远山淡青 */
-  --shan-mid:  #7E948F;
-  --shan-near: #3F4B47;   /* 近石焦墨 */
+  --shan-far:  #B8BEF2;   /* 远山:淡蓝紫 */
+  --shan-mid:  #8E8BE0;
+  --shan-near: #4A4596;   /* 近峰:靛墨 */
+  --glow-a:    #6F86FF;
+  --glow-b:    #B38CFF;
   --ochre:     #C29A62;   /* 赭石 */
 
   --cinnabar:  #A8322A;
@@ -724,4 +728,18 @@ a { color: inherit; }
 .range--scape { top: 0; bottom: 0; height: auto; width: 100%; min-width: 1100px; }
 .range--scape::after {
   background: linear-gradient(to top, var(--ground) 0%, transparent 14%);
+}
+
+/* 光影流:蓝紫两团光在山后缓缓流动 */
+.hero:has(.range--scape)::before {
+  content: ""; position: absolute; inset: -10% -20%; z-index: -1; pointer-events: none;
+  background:
+    radial-gradient(40% 45% at 22% 70%, color-mix(in srgb, var(--glow-a) 22%, transparent), transparent 70%),
+    radial-gradient(38% 42% at 80% 60%, color-mix(in srgb, var(--glow-b) 22%, transparent), transparent 70%);
+  animation: glow-flow 18s ease-in-out infinite alternate;
+}
+@keyframes glow-flow { from { transform: translateX(-3%) } to { transform: translateX(3%) } }
+@media (prefers-reduced-motion: reduce) { .hero:has(.range--scape)::before { animation: none; } }
+.hero:has(.range--scape) .moondisc {
+  background: radial-gradient(circle at 40% 40%, color-mix(in srgb, var(--glow-b) 30%, transparent), color-mix(in srgb, var(--glow-a) 14%, transparent) 70%, transparent 72%);
 }
