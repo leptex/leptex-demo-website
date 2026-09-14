@@ -18,15 +18,18 @@
   --ink-5:  #3A3830;
 
   --line:  color-mix(in srgb, var(--ink-4) 42%, transparent);
-  --mist:  #2A2F38;           /* 山间的雾,永远比地亮 */
+  --mist:  #18202E;           /* 山间的雾,永远比地亮 */
   --range: #9AA0AC;           /* 月下的山 */
-  --shan-far:  #3E4A52;
-  --shan-mid:  #56646A;
-  --shan-near: #7E8A88;
+  --shan-far:  #24334F;
+  --shan-mid:  #33496F;
+  --shan-near: #7F9CCB;
+  --glow-a:    #4E7BD8;   /* 远山的蓝光 */
+  --glow-b:    #6E93E2;
   --ochre:     #8A6E4A;
 
-  --cinnabar:  #DD6650;       /* 朱砂,夜里要发光 —— 当文字用 */
-  --on-cinnabar: #26110B;     /* 印在朱砂上的墨。夜里珊瑚太亮,纸白只有 3.2:1 */
+  --cinnabar:  #A99BFF;       /* 强调色:Leptex 蓝紫。当文字用,夜里 7:1 以上 */
+  --on-cinnabar: #FFFFFF;     /* 印在光影流按钮上的字 */
+  --flow: linear-gradient(135deg, #6A48DC 0%, #8B45CF 100%);   /* 紫色光影流,纸白 ≥ 5.5:1 */
 
   /* 画心:册页永远是纸色,像挂在暗墙上的一幅画 */
   --plate:      #E6E0D1;
@@ -49,29 +52,31 @@
 :root[data-theme="light"] {
   color-scheme: light;
 
-  --ground:        #F4F0E6;   /* 宣纸 */
-  --ground-raised: #FBF8F1;
-  --ground-sunk:   #EBE5D6;
+  --ground:        #FFFFFF;   /* 纯白:整页一个底色,不再分段 */
+  --ground-raised: #FFFFFF;
+  --ground-sunk:   #FFFFFF;
 
   --ink:    #191815;
   --ink-2:  #46443D;
   --ink-3:  #6F6B5F;
   --ink-4:  #6B6557;   /* WCAG AA 4.5:1 */
-  --ink-5:  #D6D0BE;
+  --ink-5:  #E2E4EA;
 
   --line:  color-mix(in srgb, var(--ink-4) 52%, transparent);
-  --mist:  #FBF8F1;
+  --mist:  #FFFFFF;
   --range: #55524A;
-  --shan-far:  #A9BCBB;   /* 远山淡青 */
-  --shan-mid:  #7E948F;
-  --shan-near: #3F4B47;   /* 近石焦墨 */
+  --shan-far:  #BFD2EE;   /* 远山:浅蓝 */
+  --shan-mid:  #8EABD8;
+  --shan-near: #4B6594;   /* 近峰:蓝墨 */
+  --glow-a:    #8DB2F2;
+  --glow-b:    #B3CDF6;
   --ochre:     #C29A62;   /* 赭石 */
 
-  --cinnabar:  #A8322A;
-  --on-cinnabar: #FFF6F1;
+  --cinnabar:  #5840D0;
+  --on-cinnabar: #FFFFFF;
 
-  --plate:      #F0EBDE;
-  --plate-edge: #DCD5C3;
+  --plate:      #F7F8FB;
+  --plate-edge: #E6E8EF;
 }
 
 /* ------------------------------------------------------------- 3. 基底 */
@@ -101,7 +106,7 @@ body::before {
   mix-blend-mode: screen;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='260' height='260' filter='url(%23n)' opacity='0.3'/%3E%3C/svg%3E");
 }
-:root[data-theme="light"] body::before { mix-blend-mode: multiply; opacity: .5; }
+:root[data-theme="light"] body::before { display: none; }   /* 纯白底不要纸纹 */
 
 img, svg { max-width: 100%; display: block; }
 
@@ -137,11 +142,11 @@ a { color: inherit; }
   display: grid;
   place-items: center;
   /* 标是商标 —— WCAG 1.4.11 明确豁免,所以两种模式下都留纸白,最好看 */
-  color: #FFF6F1;
+  color: #FFFFFF;
   width: 32px; height: 32px;
   flex: none;
   border-radius: 8px;
-  background: var(--cinnabar);
+  background: var(--flow);
   box-shadow: inset 0 0 0 1px color-mix(in srgb, #000 18%, transparent);
 }
 .mark svg { width: 19px; height: 19px; }
@@ -199,7 +204,7 @@ a { color: inherit; }
   display: inline-flex; align-items: center; gap: 6px;
   margin-left: 8px;
   padding: 9px 17px;
-  background: var(--cinnabar);
+  background: var(--flow);
   color: var(--on-cinnabar);
   font-size: 14px;
   letter-spacing: .03em;
@@ -333,7 +338,7 @@ a { color: inherit; }
                               color-mix(in srgb, var(--ink) 6%, transparent) 72%, transparent 78%);
   pointer-events: none;
 }
-:root[data-theme="light"] .moondisc { background: color-mix(in srgb, var(--cinnabar) 13%, transparent); }
+:root[data-theme="light"] .moondisc { background: color-mix(in srgb, var(--glow-b) 16%, transparent); }
 
 /* ------------------------------------------------------------ 7. 问境 */
 .hero {
@@ -448,7 +453,7 @@ a { color: inherit; }
   display: grid; place-items: center;
   width: 42px; height: 42px;
   border: 0; border-radius: 12px;
-  background: var(--cinnabar);
+  background: var(--flow);
   color: var(--on-cinnabar);
   cursor: pointer;
   box-shadow: inset 0 0 0 1px color-mix(in srgb, #000 16%, transparent);
@@ -477,7 +482,7 @@ a { color: inherit; }
 
 /* ------------------------------------------------------------ 9. 章节 */
 .section { padding-block: var(--bay); position: relative; z-index: 1; }
-.section--sunk { background: color-mix(in srgb, var(--ground-sunk) 70%, transparent); }
+.section--sunk { background: transparent; }   /* 与首屏同一底色,避免色块断层 */
 .section--tight { padding-block: 0; }
 
 .section__head { max-width: 640px; margin-bottom: clamp(38px, 5.5vw, 62px); }
@@ -725,3 +730,36 @@ a { color: inherit; }
 .range--scape::after {
   background: linear-gradient(to top, var(--ground) 0%, transparent 14%);
 }
+
+/* 光影流:蓝紫两团光在山后缓缓流动 */
+.hero:has(.range--scape)::before {
+  content: ""; position: absolute; inset: -10% -20%; z-index: -1; pointer-events: none;
+  background:
+    radial-gradient(40% 45% at 22% 70%, color-mix(in srgb, var(--glow-a) 22%, transparent), transparent 70%),
+    radial-gradient(38% 42% at 80% 60%, color-mix(in srgb, var(--glow-b) 22%, transparent), transparent 70%);
+  animation: glow-flow 18s ease-in-out infinite alternate;
+}
+@keyframes glow-flow { from { transform: translateX(-3%) } to { transform: translateX(3%) } }
+@media (prefers-reduced-motion: reduce) { .hero:has(.range--scape)::before { animation: none; } }
+.hero:has(.range--scape) .moondisc {
+  background: radial-gradient(circle at 40% 40%, color-mix(in srgb, var(--glow-b) 30%, transparent), color-mix(in srgb, var(--glow-a) 14%, transparent) 70%, transparent 72%);
+}
+
+/* 应季:只有山楂在卖,其他作物标「未到季」,不是入口 */
+.plate { position: relative; }
+.crop--in { border-color: color-mix(in srgb, var(--cinnabar) 55%, var(--line)); }
+.crop__badge {
+  position: absolute; top: 12px; left: 12px;
+  padding: 4px 10px; border-radius: 999px;
+  background: var(--flow); color: var(--on-cinnabar);
+  font-size: 11.5px; letter-spacing: .1em; text-transform: uppercase;
+}
+.crop--in .crop__ask { opacity: 1; }
+.crop--off:hover { transform: none; border-color: var(--line); }
+.crop--off .plate img { filter: grayscale(.9); opacity: .55; }
+.crop--off .crop__body { flex-direction: row; align-items: baseline; justify-content: space-between; gap: 12px; }
+.crop--off .crop__name { color: var(--ink-3); }
+.crop__off { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); white-space: nowrap; }
+
+/* 页脚只留品牌 —— 联系方式一律走对话 */
+.colophon__grid--solo { grid-template-columns: 1fr !important; }

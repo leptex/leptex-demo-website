@@ -8,7 +8,7 @@
 <script>try{var t=localStorage.getItem('lf.theme');document.documentElement.setAttribute('data-theme',t==='dark'?'dark':'light')}catch(e){}</script>
 <title data-i18n="nf.title">Not here — Lucky Farm</title>
 <meta name="description" content="A family fruit farm in Redmond, WA. Ask us anything and get today's answer, in your own language.">
-<meta name="theme-color" content="#F4F0E6">
+<meta name="theme-color" content="#FFFFFF">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <meta name="robots" content="noindex">
 <meta property="og:type" content="website">
@@ -68,7 +68,7 @@
           </filter>
           <filter id="dab" filterUnits="userSpaceOnUse" x="-200" y="-200" width="1840" height="1300"><feGaussianBlur stdDeviation="2.2"/></filter>
           <filter id="mist" filterUnits="userSpaceOnUse" x="-200" y="-200" width="1840" height="1300"><feGaussianBlur stdDeviation="22"/></filter>
-          <linearGradient id="wash-far" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="var(--shan-far)"/><stop offset=".62" stop-color="var(--shan-far)" stop-opacity=".55"/><stop offset="1" stop-color="var(--shan-far)" stop-opacity="0"/></linearGradient><linearGradient id="wash-mid" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="var(--shan-mid)"/><stop offset=".62" stop-color="var(--shan-mid)" stop-opacity=".55"/><stop offset="1" stop-color="var(--shan-mid)" stop-opacity="0"/></linearGradient><linearGradient id="wash-near" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="var(--shan-near)"/><stop offset=".62" stop-color="var(--shan-near)" stop-opacity=".55"/><stop offset="1" stop-color="var(--shan-near)" stop-opacity="0"/></linearGradient>
+          <linearGradient id="wash-far" x1="0" y1="0" x2=".35" y2="1"><stop offset="0" stop-color="var(--shan-far)"/><stop offset=".5" stop-color="var(--glow-a)" stop-opacity=".45"/><stop offset="1" stop-color="var(--glow-b)" stop-opacity="0"/></linearGradient><linearGradient id="wash-mid" x1="0" y1="0" x2=".35" y2="1"><stop offset="0" stop-color="var(--shan-mid)"/><stop offset=".5" stop-color="var(--glow-b)" stop-opacity=".45"/><stop offset="1" stop-color="var(--glow-a)" stop-opacity="0"/></linearGradient><linearGradient id="wash-near" x1="0" y1="0" x2=".35" y2="1"><stop offset="0" stop-color="var(--shan-near)"/><stop offset=".5" stop-color="var(--glow-a)" stop-opacity=".45"/><stop offset="1" stop-color="var(--glow-b)" stop-opacity="0"/></linearGradient>
           <radialGradient id="clear" cx="720" cy="380" r="520" gradientUnits="userSpaceOnUse" gradientTransform="translate(720 380) scale(1 .78) translate(-720 -380)">
             <stop offset=".55" stop-color="#000"/><stop offset="1" stop-color="#fff"/>
           </radialGradient>
@@ -97,7 +97,7 @@
     <div class="wrap hero__inner">
       <p class="eyebrow" data-i18n="nf.eyebrow">404</p>
       <h1 data-i18n="nf.h1">This page is not here</h1>
-      <p class="hero__sub" data-i18n="nf.sub">It may never have been. Either way, ask — that is where the answers were anyway.</p>
+      <p class="hero__sub" data-i18n="nf.sub">Maybe it never existed. Either way, just ask — the answers are in the chat.</p>
       <form class="ask" data-ask action="https://leptex.com/web/bu8nbabMeDZu" method="get" target="_blank" rel="noopener">
         <input type="text" name="q" data-ask-input data-ask-focus autocomplete="off"
                placeholder="What were you looking for?" data-i18n-ph="nf.ph" data-i18n-label="ui.askph" aria-label="Ask Lucky Farm anything">
@@ -110,7 +110,7 @@
         <a class="pill" href="https://leptex.com/web/bu8nbabMeDZu?q=What%20are%20today%27s%20prices%3F&amp;e=notfound" target="_blank" rel="noopener" data-q="q.price"><span class="pill__dot" aria-hidden="true"></span><span data-i18n="l.price">How much today?</span></a>
         <a class="pill" href="https://leptex.com/web/bu8nbabMeDZu?q=What%20is%20ripe%20and%20ready%20today%3F&amp;e=notfound" target="_blank" rel="noopener" data-q="q.today"><span class="pill__dot" aria-hidden="true"></span><span data-i18n="l.today">What is ripe today?</span></a>
       </div>
-      <p class="ask__note" data-i18n="ask.note">Answers by Leptex · opens in a new tab</p>
+      <p class="ask__note" data-i18n="ask.note">Answered by Leptex AI · opens in a new tab</p>
       <p class="back-link"><a class="inkline inkline--lead" href="./" data-i18n="nf.home">Back to the farm</a></p>
     </div>
   </section>
@@ -124,21 +124,15 @@
 
 <footer class="colophon">
   <div class="wrap">
-    <div class="colophon__grid colophon__grid--slim">
+    <div class="colophon__grid colophon__grid--solo">
       <div class="colophon__brand">
         <a class="brand" href="./">
           <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M1.5 14.6 7.2 6.4l3.4 4.6L15 3l7.5 11.6Z" fill="currentColor"/><path d="M2.4 18.2c2.4-1.5 4.3-1.5 6.6 0 2.3 1.5 4.2 1.5 6.6 0 2.3-1.5 4.2-1.5 6.4 0" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" fill="none" opacity=".75"/></svg></span>
-          <span class="brand__name"><b>Lucky Farm</b><i>幸运农场</i></span>
+          <span>
+            <span class="brand__name"><b>Lucky Farm</b><i>幸运农场</i></span>
+            <span class="brand__tag" data-i18n="brand.tag">Redmond, WA</span>
+          </span>
         </a>
-        <p data-i18n="foot.about">A family farm in Redmond, WA. Everything else, just ask.</p>
-      </div>
-      <div>
-        <h4 data-i18n="foot.reach">Reach us</h4>
-        <ul>
-          <!-- 改这里:邮箱 -->
-          <li><a class="edit" title="Sample content — replace" href="mailto:hello@luckyfarm.leptex.shop">hello@luckyfarm.leptex.shop</a></li>
-          <li><a href="https://leptex.com/web/bu8nbabMeDZu?e=notfound" target="_blank" rel="noopener" data-i18n="foot.anything">Ask us anything</a></li>
-        </ul>
       </div>
     </div>
     <div class="colophon__foot">
