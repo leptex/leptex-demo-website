@@ -158,54 +158,6 @@ window.LF_I18N = {
   "vi": "Hỏi một câu, câu trả lời của người sẽ đến — của hôm nay, bằng ngôn ngữ của bạn.",
   "zh": "问一句,回来的是人的答案 —— 今天的,用你自己的语言。"
  },
- "hw.h2": {
-  "en": "Ask about this year's hawthorn",
-  "es": "Pregunta por el espino de este año",
-  "ja": "今年の山査子について聞いてください",
-  "ko": "올해 산사에 대해 물어보세요",
-  "vi": "Hỏi về sơn tra năm nay",
-  "zh": "今年的山楂,问吧"
- },
- "hw.kicker": {
-  "en": "September · Hawthorn season",
-  "es": "Septiembre · Temporada de espino",
-  "ja": "9月 · 山査子の季節",
-  "ko": "9월 · 산사 제철",
-  "vi": "Tháng 9 · Mùa sơn tra",
-  "zh": "九月 · 山楂季"
- },
- "l.hw.bulk": {
-  "en": "Can I buy a big box?",
-  "es": "¿Puedo comprar una caja grande?",
-  "ja": "大箱で買える?",
-  "ko": "큰 박스로 살 수 있나요?",
-  "vi": "Mua cả thùng lớn được không?",
-  "zh": "能买一大箱吗?"
- },
- "l.hw.hold": {
-  "en": "Can you hold some for me?",
-  "es": "¿Me pueden guardar algo?",
-  "ja": "取り置きできる?",
-  "ko": "좀 남겨 주실 수 있나요?",
-  "vi": "Giữ lại cho tôi một ít được không?",
-  "zh": "能帮我留一些吗?"
- },
- "l.hw.keep": {
-  "en": "How do I store it?",
-  "es": "¿Cómo lo guardo?",
-  "ja": "どう保存するの?",
-  "ko": "어떻게 보관하나요?",
-  "vi": "Bảo quản thế nào?",
-  "zh": "买回去怎么存?"
- },
- "l.hw.left": {
-  "en": "How much is left?",
-  "es": "¿Cuánto queda?",
-  "ja": "あとどのくらい残ってる?",
-  "ko": "얼마나 남았어요?",
-  "vi": "Còn lại bao nhiêu?",
-  "zh": "今年还剩多少?"
- },
  "l.hw.order": {
   "en": "How do I order hawthorn?",
   "es": "¿Cómo pido espino?",
@@ -229,22 +181,6 @@ window.LF_I18N = {
   "ko": "산사 얼마예요?",
   "vi": "Sơn tra giá bao nhiêu?",
   "zh": "山楂多少钱?"
- },
- "l.hw.spray": {
-  "en": "Is it sprayed?",
-  "es": "¿Lleva pesticidas?",
-  "ja": "農薬は使ってる?",
-  "ko": "농약 쳤나요?",
-  "vi": "Có phun thuốc không?",
-  "zh": "打农药吗?"
- },
- "l.hw.taste": {
-  "en": "Sweet or sour? How do I eat it?",
-  "es": "¿Dulce o ácido? ¿Cómo se come?",
-  "ja": "甘い?酸っぱい?食べ方は?",
-  "ko": "단가요, 신가요? 어떻게 먹나요?",
-  "vi": "Chua hay ngọt? Ăn thế nào?",
-  "zh": "酸还是甜?怎么吃?"
  },
  "l.order": {
   "en": "How do I order?",
@@ -350,38 +286,6 @@ window.LF_I18N = {
   "vi": "Còn sơn tra không? Năm nay quả to cỡ nào?",
   "zh": "山楂现在还有吗?今年个头有多大?"
  },
- "q.hw.bulk": {
-  "en": "Can I buy hawthorn by the big box, for jam or to share?",
-  "es": "¿Puedo comprar espino en caja grande, para mermelada o para compartir?",
-  "ja": "ジャム用やおすそ分け用に、山査子を大箱で買えますか?",
-  "ko": "잼을 만들거나 나누려고 산사를 큰 박스로 살 수 있나요?",
-  "vi": "Tôi mua sơn tra cả thùng lớn để làm mứt hoặc chia cho bạn bè được không?",
-  "zh": "山楂能整箱买吗?做果酱或者分给朋友。"
- },
- "q.hw.hold": {
-  "en": "Can you hold some hawthorn for me until I can come?",
-  "es": "¿Me pueden guardar espino hasta que pueda ir?",
-  "ja": "取りに行くまで山査子を取り置きしてもらえますか?",
-  "ko": "제가 갈 때까지 산사를 좀 남겨 주실 수 있나요?",
-  "vi": "Giữ lại cho tôi ít sơn tra đến khi tôi tới lấy được không?",
-  "zh": "能帮我留一些山楂,等我来取吗?"
- },
- "q.hw.keep": {
-  "en": "How long does fresh hawthorn keep, and how should I store it?",
-  "es": "¿Cuánto dura el espino fresco y cómo lo guardo?",
-  "ja": "生の山査子はどのくらい持ちますか?どう保存すればいいですか?",
-  "ko": "신선한 산사는 얼마나 가고, 어떻게 보관하나요?",
-  "vi": "Sơn tra tươi để được bao lâu, bảo quản thế nào?",
-  "zh": "新鲜山楂能放多久?怎么保存?"
- },
- "q.hw.left": {
-  "en": "How much hawthorn is left this season?",
-  "es": "¿Cuánto espino queda esta temporada?",
-  "ja": "今季の山査子はあとどのくらい残っていますか?",
-  "ko": "이번 철 산사는 얼마나 남았나요?",
-  "vi": "Mùa này sơn tra còn lại bao nhiêu?",
-  "zh": "今年的山楂还剩多少?"
- },
  "q.hw.order": {
   "en": "I'd like to order fresh hawthorn. How do I do it?",
   "es": "Quiero pedir espino fresco. ¿Cómo lo hago?",
@@ -405,22 +309,6 @@ window.LF_I18N = {
   "ko": "이번 주 신선한 산사 가격이 어떻게 되나요?",
   "vi": "Sơn tra tươi tuần này giá bao nhiêu?",
   "zh": "新鲜山楂这周怎么卖?"
- },
- "q.hw.spray": {
-  "en": "Is anything sprayed on the hawthorn trees?",
-  "es": "¿Se fumigan los espinos con algo?",
-  "ja": "山査子の木に農薬は使っていますか?",
-  "ko": "산사나무에 농약을 치나요?",
-  "vi": "Cây sơn tra có phun thuốc gì không?",
-  "zh": "山楂树打过农药吗?"
- },
- "q.hw.taste": {
-  "en": "Is this year's hawthorn sweet or sour, and how do people eat it?",
-  "es": "¿El espino de este año es dulce o ácido, y cómo se come?",
-  "ja": "今年の山査子は甘いですか、酸っぱいですか?どうやって食べますか?",
-  "ko": "올해 산사는 단가요 신가요? 보통 어떻게 먹나요?",
-  "vi": "Sơn tra năm nay chua hay ngọt, thường ăn thế nào?",
-  "zh": "今年的山楂酸还是甜?一般怎么吃?"
  },
  "q.order": {
   "en": "How do I place an order with you?",
@@ -461,14 +349,6 @@ window.LF_I18N = {
   "ko": "주문",
   "vi": "Đặt mua",
   "zh": "下单"
- },
- "ui.go": {
-  "en": "Ask",
-  "es": "Preguntar",
-  "ja": "聞く",
-  "ko": "물어보기",
-  "vi": "Hỏi",
-  "zh": "去问"
  },
  "ui.in": {
   "en": "In season",
