@@ -70,14 +70,6 @@ window.LF_I18N = {
   "vi": "Hồng",
   "zh": "柿子"
  },
- "foot.about": {
-  "en": "A family farm in Redmond, WA. Everything else, just ask.",
-  "es": "Una granja familiar en Redmond, WA. Lo demás, pregúntanos.",
-  "ja": "ワシントン州レドモンドの家族農園。あとは、聞いてください。",
-  "ko": "워싱턴주 레드먼드의 가족 농장. 나머지는 물어보세요.",
-  "vi": "Một nông trại gia đình ở Redmond, WA. Còn lại, cứ hỏi.",
-  "zh": "华盛顿州 Redmond 的一家家庭农场。别的,问一句就是了。"
- },
  "foot.by": {
   "en": "Powered by Leptex",
   "es": "Con tecnología de Leptex",
