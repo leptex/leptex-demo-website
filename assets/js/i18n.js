@@ -190,6 +190,22 @@ window.LF_I18N = {
   "vi": "Tháng 9 · Mùa sơn tra",
   "zh": "九月 · 山楂季"
  },
+ "l.hw.bulk": {
+  "en": "Can I buy a big box?",
+  "es": "¿Puedo comprar una caja grande?",
+  "ja": "大箱で買える?",
+  "ko": "큰 박스로 살 수 있나요?",
+  "vi": "Mua cả thùng lớn được không?",
+  "zh": "能买一大箱吗?"
+ },
+ "l.hw.hold": {
+  "en": "Can you hold some for me?",
+  "es": "¿Me pueden guardar algo?",
+  "ja": "取り置きできる?",
+  "ko": "좀 남겨 주실 수 있나요?",
+  "vi": "Giữ lại cho tôi một ít được không?",
+  "zh": "能帮我留一些吗?"
+ },
  "l.hw.keep": {
   "en": "How do I store it?",
   "es": "¿Cómo lo guardo?",
@@ -197,6 +213,14 @@ window.LF_I18N = {
   "ko": "어떻게 보관하나요?",
   "vi": "Bảo quản thế nào?",
   "zh": "买回去怎么存?"
+ },
+ "l.hw.left": {
+  "en": "How much is left?",
+  "es": "¿Cuánto queda?",
+  "ja": "あとどのくらい残ってる?",
+  "ko": "얼마나 남았어요?",
+  "vi": "Còn lại bao nhiêu?",
+  "zh": "今年还剩多少?"
  },
  "l.hw.order": {
   "en": "How do I order hawthorn?",
@@ -342,6 +366,22 @@ window.LF_I18N = {
   "vi": "Còn sơn tra không? Năm nay quả to cỡ nào?",
   "zh": "山楂现在还有吗?今年个头有多大?"
  },
+ "q.hw.bulk": {
+  "en": "Can I buy hawthorn by the big box, for jam or to share?",
+  "es": "¿Puedo comprar espino en caja grande, para mermelada o para compartir?",
+  "ja": "ジャム用やおすそ分け用に、山査子を大箱で買えますか?",
+  "ko": "잼을 만들거나 나누려고 산사를 큰 박스로 살 수 있나요?",
+  "vi": "Tôi mua sơn tra cả thùng lớn để làm mứt hoặc chia cho bạn bè được không?",
+  "zh": "山楂能整箱买吗?做果酱或者分给朋友。"
+ },
+ "q.hw.hold": {
+  "en": "Can you hold some hawthorn for me until I can come?",
+  "es": "¿Me pueden guardar espino hasta que pueda ir?",
+  "ja": "取りに行くまで山査子を取り置きしてもらえますか?",
+  "ko": "제가 갈 때까지 산사를 좀 남겨 주실 수 있나요?",
+  "vi": "Giữ lại cho tôi ít sơn tra đến khi tôi tới lấy được không?",
+  "zh": "能帮我留一些山楂,等我来取吗?"
+ },
  "q.hw.keep": {
   "en": "How long does fresh hawthorn keep, and how should I store it?",
   "es": "¿Cuánto dura el espino fresco y cómo lo guardo?",
@@ -349,6 +389,14 @@ window.LF_I18N = {
   "ko": "신선한 산사는 얼마나 가고, 어떻게 보관하나요?",
   "vi": "Sơn tra tươi để được bao lâu, bảo quản thế nào?",
   "zh": "新鲜山楂能放多久?怎么保存?"
+ },
+ "q.hw.left": {
+  "en": "How much hawthorn is left this season?",
+  "es": "¿Cuánto espino queda esta temporada?",
+  "ja": "今季の山査子はあとどのくらい残っていますか?",
+  "ko": "이번 철 산사는 얼마나 남았나요?",
+  "vi": "Mùa này sơn tra còn lại bao nhiêu?",
+  "zh": "今年的山楂还剩多少?"
  },
  "q.hw.order": {
   "en": "I'd like to order fresh hawthorn. How do I do it?",
