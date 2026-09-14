@@ -760,3 +760,6 @@ a { color: inherit; }
 .crop--off .crop__body { flex-direction: row; align-items: baseline; justify-content: space-between; gap: 12px; }
 .crop--off .crop__name { color: var(--ink-3); }
 .crop__off { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); white-space: nowrap; }
+
+/* 页脚只留品牌 —— 联系方式一律走对话 */
+.colophon__grid--solo { grid-template-columns: 1fr !important; }

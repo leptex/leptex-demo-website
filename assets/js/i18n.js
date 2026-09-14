@@ -78,14 +78,6 @@ window.LF_I18N = {
   "vi": "Một nông trại gia đình ở Redmond, WA. Còn lại, cứ hỏi.",
   "zh": "华盛顿州 Redmond 的一家家庭农场。别的,问一句就是了。"
  },
- "foot.anything": {
-  "en": "Ask us anything",
-  "es": "Pregúntanos lo que sea",
-  "ja": "何でも聞いてください",
-  "ko": "무엇이든 물어보세요",
-  "vi": "Hỏi gì cũng được",
-  "zh": "随便问点什么"
- },
  "foot.by": {
   "en": "Powered by Leptex",
   "es": "Con tecnología de Leptex",
@@ -93,14 +85,6 @@ window.LF_I18N = {
   "ko": "Powered by Leptex",
   "vi": "Vận hành bởi Leptex",
   "zh": "由 Leptex 驱动"
- },
- "foot.reach": {
-  "en": "Reach us",
-  "es": "Contacto",
-  "ja": "連絡先",
-  "ko": "연락",
-  "vi": "Liên hệ",
-  "zh": "联系"
  },
  "foot.rights": {
   "en": "© 2026 Lucky Farm · Redmond, WA",
